@@ -12,6 +12,7 @@ import { SITE } from "~/config.mjs";
 import HeroTwo from "~/components/widgets/HeroTwo";
 import MainFormSection from "~/components/widgets/MainFormSection";
 
+
 export default component$(() => {
   return (
     <>
@@ -19,6 +20,7 @@ export default component$(() => {
       <HeroTwo/>
       {/* <Features /> */}
       <FAQs />
+      
       <Stats />
       <CallToAction />
       <MainFormSection/>

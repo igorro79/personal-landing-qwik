@@ -31,11 +31,12 @@ export default component$(() => {
           rel="stylesheet"
         />
 
-        {/* <!-- stylesheet --> */}
+         {/* TODO added carousel tailwind 27.06.2023 */}
        <link
   rel="stylesheet"
-  href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
-/>
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+
+       
 
         {/* awesom */}
         <link
@@ -52,8 +53,13 @@ export default component$(() => {
         <RouterOutlet />
         <ServiceWorkerRegister />
 
-        {/* <!-- script --> */}
-        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+        {/* TODO added carousel tailwind 27.06.2023 */}
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+         {/* <!-- from cdn !!!!!!!!!!!--> */}
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
+        {/* <!-- from cdn --> */}
+{/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script> */}
       </body>
     </QwikCityProvider>
   );
