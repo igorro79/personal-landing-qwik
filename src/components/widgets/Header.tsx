@@ -1,39 +1,52 @@
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+// import { component$, useSignal, useStore, useVisibleTask$ } from "@builder.io/qwik";
+import { component$,  useStore, } from "@builder.io/qwik";
 import { Link, useContent } from "@builder.io/qwik-city";
 
 import Logo from "~/components/atoms/Logo";
 import ToggleTheme from "~/components/core/ToggleTheme";
 import ToggleMenu from "~/components/core/ToggleMenu";
-import { useWindowScroll } from "~/hooks/useWindowScroll";
+// import { useWindowScroll } from "~/hooks/useWindowScroll";
 
-export default component$(() => {
+interface HeaderProps {
+  class: string;
+}
+
+export default component$((props: HeaderProps) => {
+
+  const store = useStore({
+    isScrolling: false, 
+   
+    modal: false,
+
+   
+  });
   // const store = useStore({
   //   isScrolling: false,
   // });
 
   // Header scrolling logic
-  const show = useSignal(true);
-  const position = useSignal(0);
-  const pos = useWindowScroll();
+  // const show = useSignal(true);
+  // const position = useSignal(0);
+  // const pos = useWindowScroll();
 
-  useVisibleTask$(({ track }) => {
-    track(pos);
-    if (pos.value === 0 && show.value === false) {
-      show.value = true;
-      position.value = pos.value;
-      return;
-    }
-    if (pos.value > 10 && pos.value > position.value) {
-      show.value = false;
-      position.value = pos.value;
-      return;
-    }
-    if (pos.value !== 0 && pos.value <= position.value) {
-      show.value = true;
-      position.value = pos.value;
-      return;
-    }
-  });
+  // useVisibleTask$(({ track }) => {
+  //   track(pos);
+  //   if (pos.value === 0 && show.value === false) {
+  //     show.value = true;
+  //     position.value = pos.value;
+  //     return;
+  //   }
+  //   if (pos.value > 10 && pos.value > position.value) {
+  //     show.value = false;
+  //     position.value = pos.value;
+  //     return;
+  //   }
+  //   if (pos.value !== 0 && pos.value <= position.value) {
+  //     show.value = true;
+  //     position.value = pos.value;
+  //     return;
+  //   }
+  // });
 
   const { menu } = useContent();
 
@@ -41,10 +54,15 @@ export default component$(() => {
     <>
       {/* sticky  sticky*/}
       <header
-        // class={` z-30 top-header transition ease-in-out duration-500   flex-none mx-auto  width-header backdrop-blur-sm bg-white/30
+        // class={`fixed z-30 top-header transition ease-in-out duration-500   flex-none mx-auto  width-header backdrop-blur-sm bg-white/30
         // ${!show.value ? "-translate-y-[150%] " : ""}
         // `}
-        class="fixed w-full z-30 top-header    flex-none mx-auto  width-header backdrop-blur-xl "
+        // md:bg-slate-300/50 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-slate-300/50 dark:bg-slate-900
+        class={`fixed w-full z-30 top-header  transition ease-in-out duration-300  flex-none mx-auto  width-header backdrop-blur-xl ${props.class}
+         ${ store.isScrolling
+          ? "bg-black "
+          : ""
+      } `}
         id="header"
       >
         <div class="py-5 px-6 mx-auto   md:flex justify-between   md:px-12">

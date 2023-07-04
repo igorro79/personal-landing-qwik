@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import { AccordionFaq } from "../feature/AccordionFaq";
 import { IconArrowDownRight } from "../icons/IconArrowDownRight";
 
 export default component$(() => {
@@ -42,11 +41,6 @@ export default component$(() => {
   ];
 
   return (
-
-
-   
-
-  
     <section class="border-t border-gray-200 dark:border-slate-800">
       <div class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
         <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
@@ -59,7 +53,6 @@ export default component$(() => {
             </h2>
           </div>
         </div>
-        <AccordionFaq/>
         <div class="max-w-screen-xl sm:mx-auto">
           <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 md:grid-cols-2">
             {items.map((subitems, index) => (

@@ -8,7 +8,7 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
 
 @layer components {
   .btn {
@@ -35,6 +35,16 @@
   }
 }
 
+@tailwind utilities;
+
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.runningLine__content {
+  min-width: max-content;
+  /*   --line-width: $line-width; */
+  animation: scroll 30s linear 0s infinite;
+  /* position: absolute; */
+  color: #fff;
 }
