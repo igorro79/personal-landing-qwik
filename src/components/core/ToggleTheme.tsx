@@ -23,9 +23,10 @@ export default component$((props: ItemProps) => {
   });
 
   return (
+    // hover:bg-gray-100 text-gray-500 focus:ring-4 focus:ring-gray-200 dark:hover:bg-gray-700
     <button
       type="button"
-      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+      class="text-white dark:text-gray-400   focus:outline-none  dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
       aria-label="Toggle between Dark and Light mode"
       onClick$={() => {
         switch (store.theme) {
@@ -41,9 +42,10 @@ export default component$((props: ItemProps) => {
       }}
     >
       {store.theme == "dark" ? (
-        <IconMoon class={iconClass} />
-      ) : (
         <IconSun class={iconClass} />
+      ) : (
+          
+      <IconMoon class={iconClass} />
       )}
     </button>
   );

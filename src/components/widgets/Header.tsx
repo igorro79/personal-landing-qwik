@@ -1,4 +1,4 @@
-import { component$, useSignal,  useVisibleTask$ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { Link, useContent } from "@builder.io/qwik-city";
 
 import Logo from "~/components/atoms/Logo";
@@ -6,14 +6,12 @@ import ToggleTheme from "~/components/core/ToggleTheme";
 import ToggleMenu from "~/components/core/ToggleMenu";
 import { useWindowScroll } from "~/hooks/useWindowScroll";
 
-
-
 export default component$(() => {
   // const store = useStore({
   //   isScrolling: false,
   // });
 
-   // Header scrolling logic
+  // Header scrolling logic
   const show = useSignal(true);
   const position = useSignal(0);
   const pos = useWindowScroll();
@@ -37,40 +35,37 @@ export default component$(() => {
     }
   });
 
-  
-
   const { menu } = useContent();
 
   return (
     <>
-       <header
-      class={`sticky z-30 top-header transition ease-in-out duration-500   flex-none mx-auto  width-header backdrop-blur-sm bg-white/30
-      ${!show.value ? "-translate-y-[150%] " : ""}
-      `}
-      id="header"
-    >
-      <div class="py-5 px-6 mx-auto   md:flex justify-between   md:px-12">
-        <div class="flex ">
+      {/* sticky  sticky*/}
+      <header
+        // class={` z-30 top-header transition ease-in-out duration-500   flex-none mx-auto  width-header backdrop-blur-sm bg-white/30
+        // ${!show.value ? "-translate-y-[150%] " : ""}
+        // `}
+        class="fixed w-full z-30 top-header    flex-none mx-auto  width-header backdrop-blur-xl "
+        id="header"
+      >
+        <div class="py-5 px-6 mx-auto   md:flex justify-between   md:px-12">
           <div class="flex ">
-            <Link class="flex items-center" href={"/"}>
-              <Logo />
+            <div class="flex ">
+              <Link class="flex items-center" href={"/"}>
+                <Logo />
               </Link>
-               <div class="hidden items-center md:flex">
-              <ToggleTheme iconClass="w-6 h-6" />
-            </div>
-            <div class="flex items-center md:hidden">
-              {/* <ToggleTheme iconClass="w-6 h-6" /> */}
-              <ToggleMenu iconClass="w-6 h-6" />
+              <div class="hidden items-center md:flex">
+                <ToggleTheme iconClass="w-6 h-6" />
+              </div>
+              <div class="flex items-center md:hidden">
+                {/* <ToggleTheme iconClass="w-6 h-6" /> */}
+                <ToggleMenu iconClass="w-6 h-6" />
+              </div>
             </div>
           </div>
 
-          
-          
-          </div>
-          
           <div class="md:self-center flex items-center  mb-4 md:mb-0 ">
             <nav
-              class="items-center w-full md:w-auto hidden md:flex text-[#457292] text-clampMenu  dark:text-slate-200 h-[calc(100vh-100px)] md:h-auto overflow-y-auto md:overflow-visible "
+              class="items-center w-full md:w-auto hidden md:flex text-white text-clampMenu  dark:text-slate-200 h-[calc(100vh-100px)] md:h-auto overflow-y-auto md:overflow-visible "
               aria-label="Main navigation"
             >
               {menu && menu.items ? (
@@ -80,19 +75,19 @@ export default component$(() => {
                       {item.href ? (
                         <a
                           href={item.href}
-                          class="font-medium  hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                          class="font-medium   hover:text-white/50 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
                         >
                           {item.text}
                         </a>
                       ) : (
-                          // TODO disabled  border border-slate-600  26.06.2023
-                        <button class="font-medium  hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out">
+                        // TODO disabled  border border-slate-600  26.06.2023
+                        <button class="font-medium  hover:text-white/50 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out">
                           {item.text}
                         </button>
                       )}
 
                       {item.items ? (
-                        <ul class="dropdown-menu rounded absolute pl-4 hidden font-medium md:bg-white md:min-w-[200px] dark:md:bg-slate-800 drop-shadow-xl">
+                        <ul class="dropdown-menu rounded absolute p-4 hidden font-medium text-slate-900 md:bg-white md:min-w-[200px] dark:md:bg-slate-800 drop-shadow-xl">
                           {item.items.map((item2, i2) => (
                             <li key={i2}>
                               <a
@@ -110,24 +105,20 @@ export default component$(() => {
                 </ul>
               ) : null}
             </nav>
-
-           
           </div>
 
-        <div class="flex items-center gap-4">
-         
-         
-          {/* <button type="button" class="text-[#457292]">
+          <div class="flex items-center gap-4">
+            {/* <button type="button" class="text-[#457292]">
             EN
           </button> */}
 
-          {/* <!--  BEGIN: buttons-languages-desktop --> */}
-          <div class="hidden  xl:block text-[#457292] ">
-            {/* pl-[22px] xl:pl-[37px] 2xl:pl-[22px]*/}
-            <div class="group/item flex items-center  xl:relative ">
-              {/* <!--  BEGIN: button-en --> */}
-              <span class="  gap-2.5 rounded-lg p-2.5 transition-all ease-in hover:text-main dark:hover:bg-none lg:flex">
-                {/* <svg
+            {/* <!--  BEGIN: buttons-languages-desktop --> */}
+            <div class="hidden  xl:block text-white ">
+              {/* pl-[22px] xl:pl-[37px] 2xl:pl-[22px]*/}
+              <div class="group/item flex items-center  xl:relative ">
+                {/* <!--  BEGIN: button-en --> */}
+                <span class="  gap-2.5 rounded-lg p-2.5 transition-all ease-in hover:text-main dark:hover:bg-none lg:flex">
+                  {/* <svg
                     class="h-[23.11px] w-[32px]"
                     width="33"
                     height="24"
@@ -175,31 +166,31 @@ export default component$(() => {
                       fill="#FF304D"
                     ></path>
                   </svg> */}
-                <span class="btn__language-desc uppercase transition-all ease-in">
-                  en
+                  <span class="btn__language-desc uppercase transition-all ease-in">
+                    en
+                  </span>
                 </span>
-              </span>
 
-              {/* <!--  BEGIN: popup-icons-languages hidden -->  */}
+                {/* <!--  BEGIN: popup-icons-languages hidden -->  */}
 
-              <div class=" invisible  z-10 opacity-0 transition-all group-hover/item:visible  group-hover/item:opacity-100   ">
-                {/* pt-[13px] 2xl:left-[23px] left-[37px]*/}
-                <div class="absolute  top-[27px] left-0 flex justify-center  ">
-                  {/* <!-- dropdown__wrapper -->  bg-[#343434] */}
-                  <div
-                    class="language-wrapper  dropdown__wrapper flex min-w-max cursor-default gap-[106px] rounded-[5px]  
+                <div class=" invisible  z-10 opacity-0 transition-all group-hover/item:visible  group-hover/item:opacity-100   ">
+                  {/* pt-[13px] 2xl:left-[23px] left-[37px]*/}
+                  <div class="absolute  top-[27px] left-0 flex justify-center  ">
+                    {/* <!-- dropdown__wrapper -->  bg-[#343434] */}
+                    <div
+                      class="language-wrapper  dropdown__wrapper flex min-w-max cursor-default gap-[106px] rounded-[5px]  
                          py-[4px]  shadow-2xl"
-                  >
-                    {/* <!-- dropdown__list --> */}
-                    <ul class="language-list  flex flex-col gap-[2px] text-lightGrey ">
-                      {/* <!--  BEGIN: button-sv --> */}
+                    >
+                      {/* <!-- dropdown__list --> */}
+                      <ul class="language-list  flex flex-col gap-[2px] text-lightGrey ">
+                        {/* <!--  BEGIN: button-sv --> */}
 
-                      <li class="group">
-                        <a
-                          href="#"
-                          class="language-item  flex items-center gap-[5.5px] rounded-[5px] p-2.5 transition-all ease-in   lg:flex"
-                        >
-                          {/* <svg
+                        <li class="group">
+                          <a
+                            href="#"
+                            class="language-item  flex items-center gap-[5.5px] rounded-[5px] p-2.5 transition-all ease-in   lg:flex"
+                          >
+                            {/* <svg
                               class="h-[23.11px] w-[32px]"
                               width="33"
                               height="24"
@@ -229,29 +220,24 @@ export default component$(() => {
                                 fill="#FFC100"
                               />
                             </svg> */}
-                          <span class="btn__language-desc uppercase transition-all ease-in group-hover:text-main">
-                            sv
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
+                            <span class="btn__language-desc uppercase transition-all ease-in group-hover:text-main">
+                              sv
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
+                {/* <!--  END: popup-icons-languages --> */}
               </div>
-              {/* <!--  END: popup-icons-languages --> */}
             </div>
+            {/* <!--  END: buttons-languages-desktop --> */}
           </div>
-          {/* <!--  END: buttons-languages-desktop --> */}
-
-         
-          
-            
-          
         </div>
-      </div>
       </header>
-      
-    {/* <header
+
+      {/* <header
       class={`sticky top-0 z-40 flex-none mx-auto w-full transition-all${
         store.isScrolling
           ? " md:bg-white/90 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900"
@@ -331,6 +317,6 @@ export default component$(() => {
         </div>
       </div>
       </header> */}
-      </>
+    </>
   );
 });
