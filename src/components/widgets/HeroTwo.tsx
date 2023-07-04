@@ -1,0 +1,116 @@
+import { component$ } from "@builder.io/qwik";
+import { Image } from "@unpic/qwik";
+
+
+
+
+export default component$(() => {
+  return (
+    <section class=" pt-24 flex flex-col items-center justify-center h-screen  bg-fixed bg-center bg-cover  bg-[url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80')]">
+         {/* bradcrambs */}
+      {/* <div class="w-max text-left mr-auto ">        
+        <nav aria-label="breadcrumb">
+          <ol class="flex w-full flex-wrap items-center rounded-md bg-blue-gray-50 bg-opacity-60 py-2 px-4">
+            <li class="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 hover:text-pink-500">
+              <a class="opacity-60" href="#">
+                <span>Docs</span>
+              </a>
+              <span class="pointer-events-none mx-2 select-none font-sans text-sm font-normal leading-normal text-blue-gray-500 antialiased">
+                /
+              </span>
+            </li>
+            <li class="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 hover:text-pink-500">
+              <a class="opacity-60" href="#">
+                <span>Components</span>
+              </a>
+              <span class="pointer-events-none mx-2 select-none font-sans text-sm font-normal leading-normal text-blue-gray-500 antialiased">
+                /
+              </span>
+            </li>
+            <li class="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 hover:text-pink-500">
+              <a
+                class="font-medium text-blue-gray-900 transition-colors hover:text-pink-500"
+                href="#"
+              >
+                Breadcrumbs
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </div> */}
+        
+       
+
+      {/* </section>
+    <section class=" bg-white dark:bg-black dark:text-white "> */}
+      
+     
+
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          {/* <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+          ></div> */}
+        </div>
+        <div class="  mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          {/* <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div class="dark:text-white  relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              Announcing our next round of funding.{" "}
+              <a href="#" class="font-semibold text-indigo-600">
+                <span class="absolute inset-0" aria-hidden="true"></span>Read
+                more <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div> */}
+          <div class="  text-center">
+            <h1 class="dark:text-white  text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Data to enrich your online business
+            </h1>
+            <p class="dark:text-white  mt-6 text-lg leading-8 text-gray-600">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+              fugiat aliqua.
+              </p>
+               <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+          Welcome to my site!
+              </div>
+              {/* button */}
+            <div
+              
+              class="mt-10 cursor-pointer flex items-center justify-center gap-x-6 transition-all ease-in-out"
+            >
+              {/* bg-indigo-600 hover:bg-indigo-500 */}
+              {/* <a href="#"></a> */}
+              <div
+                class="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  
+                bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 
+                 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </div>
+              
+            </div>
+         
+
+          </div>
+        </div>
+
+        {/* <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+          ></div>
+        </div> */}
+      </div>
+
+     
+    </section>
+  );
+});

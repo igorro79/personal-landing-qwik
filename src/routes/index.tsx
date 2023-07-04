@@ -8,11 +8,13 @@ import Stats from "~/components/widgets/Stats";
 import CallToAction from "~/components/widgets/CallToAction";
 
 import { SITE } from "~/config.mjs";
+import HeroTwo from "~/components/widgets/HeroTwo";
 
 export default component$(() => {
   return (
     <>
       <Hero />
+      <HeroTwo/>
       <Features />
       <FAQs />
       <Stats />
