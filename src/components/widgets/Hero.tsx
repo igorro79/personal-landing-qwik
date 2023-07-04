@@ -21,14 +21,35 @@ export default component$(() => {
                 
               </h1> */}
               {/*  bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 */}
-              <h1 class="text-6xl text-transparent bg-clip-text font-extrabold tracking-[1.5] lg:text-6xl 
+              <div class="relative">
+
+              
+              <h1 class="  text-6xl text-transparent bg-clip-text font-extrabold tracking-[1.5] lg:text-6xl 
               bg-gradient-to-r from-[#00242a] via-[#9c30fff0] to-[#ffffff]  drop-shadow lg:drop-shadow-[17px_20px_5px_rgba(0,0,0,0.5)]">
 						Robotics Artificial intelligence 
               </h1>
+
+              {/* <span class="animate-ping transition aese-in  duration-[5000] absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span> */}
+
+                </div>
+              <p class="text-white mt-20">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates vero nostrum veritatis alias quibusdam repellendus tempore doloremque cumque sapiente eum laudantium modi quaerat omnis, quidem explicabo suscipit provident voluptatibus unde?
+              </p>
+
+
             
               
               {/* <h2 class="mt-4 text-3xl lg:text-5xl text-white drop-shadow lg:drop-shadow-[17px_20px_5px_rgba(0,0,0,0.5)]">Tailwind CSS Responsive Text Shadow</h2> */}
-             
+             {/* rounded-md */}
+              <div
+                class=" mt-12 rounded-full  px-3.5 py-2.5 text-sm font-semibold text-white text-center shadow-sm  
+                bg-gradient-to-r from-green-400 to-blue-500  
+               transition duration-150 ease-in hover:from-pink-500 hover:to-yellow-500 
+                 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </div>
+
             </div>
           </div>
           <div class="block md:flex items-center flex-1">

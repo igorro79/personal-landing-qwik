@@ -6,7 +6,10 @@ import { Image } from "@unpic/qwik";
 
 export default component$(() => {
   return (
-    <section class=" pt-24 flex flex-col items-center justify-center h-screen  bg-fixed bg-center bg-cover  bg-[url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80')]">
+    //
+    //  bg-[url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80')]
+    // bg-[url('https://www.dddkursk.ru/image/planet/002095.1b.jpg')]
+    <section class=" pt-24 flex flex-col items-center justify-center h-screen  bg-fixed bg-center bg-cover  bg-[url('https://kor.ill.in.ua/m/610x0/1629793.jpg')]">
          {/* bradcrambs */}
       {/* <div class="w-max text-left mr-auto ">        
         <nav aria-label="breadcrumb">
@@ -46,7 +49,7 @@ export default component$(() => {
       
      
 
-      <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="relative isolate px-6 pt-14 lg:px-8 bg-">
         <div
           class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -67,7 +70,8 @@ export default component$(() => {
             </div>
           </div> */}
           <div class="  text-center">
-            <h1 class="dark:text-white  text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            {/* text-gray-900 */}
+            <h1 class="dark:text-white  text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Data to enrich your online business
             </h1>
             <p class="dark:text-white  mt-6 text-lg leading-8 text-gray-600">
@@ -75,7 +79,7 @@ export default component$(() => {
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.
               </p>
-               <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+               <div class="p-5 text-2xl text-white bg-slate-900 bg-opacity-50 rounded-xl">
           Welcome to my site!
               </div>
               {/* button */}
