@@ -141,20 +141,21 @@ export default component$(() => {
       <div class="container sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]">
         {/* <!-- Lock-also  up --> */}
         <div class="mb-[42px] flex justify-between">
-          <a
-            class="cursor-pointer text-sm font-medium leading-[1.3] text-middleGrey"
+          {/* text-middleGrey */}
+          <Link
+            class="cursor-pointer text-sm font-medium leading-[1.3] text-slate-900/50"
             href="#http://"
             target="_blank"
             rel="noopener noreferrer"
           >
             Look also
-          </a>
+          </Link>
 
           <button
             type="button"
             id="upButton"
             aria-label="button up"
-            class="flex items-center text-sm font-medium leading-[1.3] text-middleGrey transition-all hover:text-main active:text-main"
+            class="flex items-center text-sm font-medium leading-[1.3] text-slate-900/50 transition-all hover:text-main active:text-main"
           >
             Up
             <svg
@@ -307,18 +308,18 @@ export default component$(() => {
 
           <ul class="lg:border__top flex flex-row items-center justify-center gap-2 pb-[19px] pt-[28px] sm:gap-5 lg:gap-[50px] lg:pb-[28px] lg:pt-[20px] xl:order-1 xl:mt-[-4px] xl:justify-end xl:gap-[24px] xl:border-t-0 xl:pb-[40px] xl:pl-0 xl:pr-0 xl:pt-0">
             {/* <!-- instagram --> */}
-            <li>
+            <li >
               <a
                 href="https://www.instagram.com/uwp.digital/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="instagram"
-                class="social__link"
+                class="social__link "
               >
                 <span class="icon">
                   <svg
                     fill="currentColor"
-                    class="h-[29px] w-[29px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px]"
+                    class="h-[29px] w-[29px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] transition ease-in-out duration-500 hover:scale-125"
                     viewBox="0 0 38 39"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -349,7 +350,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[20px] w-[20px] lg:h-[22px] lg:w-[23px] xl:h-[23px] xl:w-[23px]"
+                    class="h-[20px] w-[20px] lg:h-[22px] lg:w-[23px] xl:h-[23px] xl:w-[23px] transition ease-in-out duration-500 hover:scale-125"
                     viewBox="0 0 29 29"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -378,7 +379,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[32px] w-[31px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px]"
+                    class="h-[32px] w-[31px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] transition ease-in-out duration-500 hover:scale-125"
                     viewBox="0 0 38 39"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -405,7 +406,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] xl:h-[30px] xl:w-[30px]"
+                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] xl:h-[30px] xl:w-[30px] transition ease-in-out duration-500 hover:scale-125"
                     viewBox="0 0 38 39"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -435,7 +436,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[20px] w-[27px] lg:h-[30px] lg:w-[30px] xl:h-[32px] xl:w-[32px]"
+                    class="h-[20px] w-[27px] lg:h-[30px] lg:w-[30px] xl:h-[32px] xl:w-[32px] transition ease-in-out duration-500 hover:scale-125"
                     viewBox="0 0 27 20"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
@@ -458,7 +459,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px]"
+                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] transition ease-in-out duration-500 hover:scale-125"
                     fill="currentColor"
                     viewBox="0 0 24 19"
                     xmlns="http://www.w3.org/2000/svg"
@@ -471,25 +472,25 @@ export default component$(() => {
           </ul>
         </div>
 
-        <div class="flex flex-col items-center gap-[5px] pt-[22px] lg:flex-row lg:justify-center lg:gap-[31px] lg:pt-0 xl:gap-[40px]">
+        <div class="flex flex-col items-center gap-[5px] pt-[22px] text-slate-900/50 lg:flex-row lg:justify-center lg:gap-[31px] lg:pt-0 xl:gap-[40px]">
           <a
             href="#"
-            class="text-xs font-medium leading-[22px] text-middleGrey transition ease-in hover:text-main xl:text-base"
+            class="text-xs font-medium leading-[22px]  transition ease-in hover:text-main xl:text-base"
           >
-            © 2022 Unity World Platform. All rights reserved.
+            © 2023 Unity World Platform. All rights reserved.
           </a>
 
           <div class="flex flex-row items-start gap-6 lg:gap-[31px] xl:gap-[40px]">
             <a
               href="#"
-              class="text-xs font-medium leading-[22px] text-middleGrey transition ease-in hover:text-main xl:text-base"
+              class="text-xs font-medium leading-[22px]  transition ease-in hover:text-main xl:text-base"
             >
               Terms & Conditions
             </a>
 
             <a
               href="#"
-              class="text-xs font-medium leading-[22px] text-middleGrey transition ease-in hover:text-main xl:text-base"
+              class="text-xs font-medium leading-[22px]  transition ease-in hover:text-main xl:text-base"
             >
               Privacy Policy
             </a>
