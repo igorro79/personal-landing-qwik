@@ -6,7 +6,7 @@ import Hero from "~/components/widgets/Hero";
 // import Features from "~/components/widgets/Features";
 import FAQs from "~/components/widgets/FAQs";
 import Stats from "~/components/widgets/Stats";
-import CallToAction from "~/components/widgets/CallToAction";
+// import CallToAction from "~/components/widgets/CallToAction";
 
 import { SITE } from "~/config.mjs";
 import HeroTwo from "~/components/widgets/HeroTwo";
@@ -22,7 +22,7 @@ export default component$(() => {
       <FAQs />
       
       <Stats />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <MainFormSection/>
 
       
