@@ -9,6 +9,17 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      innerWidth: {
+        clampHeader: "clamp(280px, 5vw, 1140px)",
+      },
+
+       fontSize: {
+        // clamp: "clamp(1rem, 5vw, 3rem)",
+         clampMenu: "clamp(0.75rem, 2vw, 1rem)",
+        clampTitle: "clamp(2rem, 5vw, 3rem)",
+        clamp: "clamp(1rem, 5vw, 1.5rem)",
+      },
+       
       colors: {
         primary: colors.purple,
         secondary: colors.sky,

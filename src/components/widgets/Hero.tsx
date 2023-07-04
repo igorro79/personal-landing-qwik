@@ -23,8 +23,8 @@ export default component$(() => {
               {/*  bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 */}
               <div class="relative">
 
-              
-              <h1 class="  text-6xl text-transparent bg-clip-text font-extrabold tracking-[1.5] lg:text-6xl 
+              {/* text-6xl lg:text-6xl*/}
+              <h1 class="text-clampTitle   text-transparent bg-clip-text font-extrabold tracking-[1.5]  
               bg-gradient-to-r from-[#00242a] via-[#9c30fff0] to-[#ffffff]  drop-shadow lg:drop-shadow-[17px_20px_5px_rgba(0,0,0,0.5)]">
 						Robotics Artificial intelligence 
               </h1>
