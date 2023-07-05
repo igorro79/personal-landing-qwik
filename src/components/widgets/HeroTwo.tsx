@@ -10,37 +10,7 @@ export default component$(() => {
     //  bg-[url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80')]
     // bg-[url('https://www.dddkursk.ru/image/planet/002095.1b.jpg')]
     <section class=" pt-24 flex flex-col items-center justify-center h-screen  bg-fixed bg-center bg-cover  bg-[url('https://kor.ill.in.ua/m/610x0/1629793.jpg')]">
-         {/* bradcrambs */}
-      {/* <div class="w-max text-left mr-auto ">        
-        <nav aria-label="breadcrumb">
-          <ol class="flex w-full flex-wrap items-center rounded-md bg-blue-gray-50 bg-opacity-60 py-2 px-4">
-            <li class="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 hover:text-pink-500">
-              <a class="opacity-60" href="#">
-                <span>Docs</span>
-              </a>
-              <span class="pointer-events-none mx-2 select-none font-sans text-sm font-normal leading-normal text-blue-gray-500 antialiased">
-                /
-              </span>
-            </li>
-            <li class="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 hover:text-pink-500">
-              <a class="opacity-60" href="#">
-                <span>Components</span>
-              </a>
-              <span class="pointer-events-none mx-2 select-none font-sans text-sm font-normal leading-normal text-blue-gray-500 antialiased">
-                /
-              </span>
-            </li>
-            <li class="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 hover:text-pink-500">
-              <a
-                class="font-medium text-blue-gray-900 transition-colors hover:text-pink-500"
-                href="#"
-              >
-                Breadcrumbs
-              </a>
-            </li>
-          </ol>
-        </nav>
-      </div> */}
+       
         
        
 
