@@ -1,4 +1,5 @@
-import { component$, createContextId, useContextProvider, useStore, useStyles$ } from "@builder.io/qwik";
+// import { component$, createContextId, useContextProvider, useStore, useStyles$, useTask$ } from "@builder.io/qwik";
+import { component$, createContextId, useContextProvider, useStore, useStyles$, } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -14,6 +15,7 @@ import globalStyles from "~/assets/styles/global.css?inline";
 export interface GenericType {
   modal: boolean;
   profile: boolean;
+  form: boolean;
  
 }
 
@@ -28,7 +30,8 @@ export default component$(() => {
     // cart: [],
     // cartIsOpen: false,
     modal: false,
-    profile: false,
+     profile: false,
+    form: false,
   });
 
     useContextProvider(GlobalContext, globalState);
@@ -40,6 +43,14 @@ export default component$(() => {
    */
 
   useStyles$(globalStyles);
+
+  //  useTask$(({ track }) => {
+  //   track(globalState);
+  //   if (globalState.form === true && globalState.modal === true) {
+  //     globalState.modal = false;
+  //   }
+    
+  // });
 
   return (
     <QwikCityProvider>

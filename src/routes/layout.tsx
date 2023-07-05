@@ -3,6 +3,8 @@ import { routeLoader$ } from "@builder.io/qwik-city";
 
 import { type InitialValues } from "@modular-forms/qwik";
 import Modal from "~/components/core/Modal";
+import ContactForm from "~/components/feature/ContactForm";
+// import DynamicFormContainer from "~/components/feature/DynamicContactFormContainer";
 import Profile from "~/components/feature/Profile";
 
 import Footer from "~/components/widgets/Footer";
@@ -10,6 +12,8 @@ import Header from "~/components/widgets/Header";
 import { useWindowScroll } from "~/hooks/useWindowScroll";
 
 import { GlobalContext } from "~/root";
+
+
 
 export type ContactForm = {
   categories: string[];
@@ -90,6 +94,12 @@ export default component$(() => {
         <Profile closeModal={closeModal} />
         {/* <Cart closeModal={closeModal} /> */}
       </Modal>
+
+      
+      {/* <DynamicFormContainer>
+        
+        <ContactForm variant="dynamic" />
+      </DynamicFormContainer> */}
     </div>
   );
 });

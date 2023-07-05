@@ -34,6 +34,8 @@ export default component$(() => {
                   <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-80 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg">
                     {post.image && (
                       <img
+                        width={200}
+                        height={150}
                         src={post.image}
                         class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
                         sizes="(max-width: 900px) 400px, 900px"

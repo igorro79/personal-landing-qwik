@@ -24,7 +24,7 @@ export default component$(({ closeModal }: Props) => {
         class="ml-auto text-3xl rounded-full text-slate-600"
       >
         {/* <HiXCircleOutline /> */}
-        X
+        <i class="fa-regular fa-circle-xmark"></i>
       </button>
       <input
         placeholder="E-mail"
