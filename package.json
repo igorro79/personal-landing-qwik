@@ -26,6 +26,7 @@
     "@builder.io/qwik-city": "1.1.4",
     "@fontsource/inter": "^4.5.15",
     "@modular-forms/qwik": "^0.18.1",
+    "@qwikest/icons": "^0.0.8",
     "@unpic/qwik": "^0.0.19",
     "clsx": "^1.2.1",
     "gray-matter": "^4.0.3",
