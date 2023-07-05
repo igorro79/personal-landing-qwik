@@ -1,10 +1,12 @@
 import { component$, useContext, $ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import { GlobalContext } from "~/root";
-import coverImage from "~/assets/images/robotics.png";
+// import coverImage from "~/assets/images/robotics.png";
+import coverImage from "~/assets/images/mobile-320.png";
 
 // const coverImage = "https://images.unsplash.com/photo-1590767950092-42b8362368da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80";
 // const coverImage = "https://p7.hiclipart.com/preview/122/843/764/robotics-industry-smart-robots-artificial-intelligence-robot-thumbnail.jpg";
+
 // const coverImage = "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43be0f.png";
 // const coverImage = "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43be0f.png";
 
