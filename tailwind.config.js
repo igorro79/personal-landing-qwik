@@ -9,6 +9,33 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+
+
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
+        blink: {
+          "50%": {
+            // borderColor: "transparent"
+            borderColor: "#3b82f6"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
+        }
+      },
+      animation: {
+        // typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 4s steps(40) infinite alternate, blink .7s infinite"
+      },
+
       innerWidth: {
         clampHeader: "clamp(280px, 5vw, 1140px)",
       },
@@ -16,7 +43,7 @@ module.exports = {
        fontSize: {
         // clamp: "clamp(1rem, 5vw, 3rem)",
          clampMenu: "clamp(0.75rem, 2vw, 1rem)",
-        clampTitle: "clamp(2rem, 5vw, 3rem)",
+        clampTitle: "clamp(3rem, 5vw, 3rem)",
         clamp: "clamp(1rem, 5vw, 1.5rem)",
       },
        

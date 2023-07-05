@@ -1,4 +1,4 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$, createContextId, useContextProvider, useStore, useStyles$ } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -10,7 +10,28 @@ import { DarkThemeLauncher } from "~/components/core/DarkThemeLauncher";
 
 import globalStyles from "~/assets/styles/global.css?inline";
 
+
+export interface GenericType {
+  modal: boolean;
+  profile: boolean;
+ 
+}
+
+export const GlobalContext = createContextId<GenericType>(
+  "mobile-menu-context"
+);
+
 export default component$(() => {
+
+   const globalState = useStore<GenericType>({
+    // cart: cartInitialValue,
+    // cart: [],
+    // cartIsOpen: false,
+    modal: false,
+    profile: false,
+  });
+
+    useContextProvider(GlobalContext, globalState);
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,
    * immediately followed by the document's <head> and <body>.
@@ -54,7 +75,7 @@ export default component$(() => {
         <ServiceWorkerRegister />
 
         {/* TODO added carousel tailwind 27.06.2023 */}
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        {/* <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> */}
          {/* <!-- from cdn !!!!!!!!!!!--> */}
 <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 

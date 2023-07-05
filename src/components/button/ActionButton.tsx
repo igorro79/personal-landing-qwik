@@ -4,7 +4,7 @@ import { type DefaultButtonProps, UnstyledButton } from "./UnstyledButton";
 import { Spinner } from "../Spinner";
 
 type ActionButtonProps = DefaultButtonProps & {
-  variant: "primary" | "secondary" | "submit";
+  variant: "primary" | "secondary" | "submit" | "main";
   label: string;
   loading?: boolean;
   class?: string;

@@ -1,11 +1,15 @@
-import { component$, Slot, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, Slot, useSignal, useVisibleTask$, $, useContext } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 
 import { type InitialValues } from "@modular-forms/qwik";
+import Modal from "~/components/core/Modal";
+import Profile from "~/components/feature/Profile";
 
 import Footer from "~/components/widgets/Footer";
 import Header from "~/components/widgets/Header";
 import { useWindowScroll } from "~/hooks/useWindowScroll";
+
+import { GlobalContext } from "~/root";
 
 export type ContactForm = {
   categories: string[];
@@ -62,6 +66,14 @@ export default component$(() => {
       return;
     }
   });
+
+  const context = useContext(GlobalContext);
+  
+   const closeModal = $(() => {
+    context.modal = false;
+    context.profile = false;
+    // context.cartIsOpen = false;
+  });
   
   return (
     <div>
@@ -73,6 +85,11 @@ export default component$(() => {
         <Slot />
       </main>
       <Footer />
+
+      <Modal>
+        <Profile closeModal={closeModal} />
+        {/* <Cart closeModal={closeModal} /> */}
+      </Modal>
     </div>
   );
 });

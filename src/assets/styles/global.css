@@ -41,6 +41,8 @@
   display: block;
 }
 
+
+/* =============== app-test-01 running-line -???????????  ==================== */
 .runningLine__content {
   min-width: max-content;
   /*   --line-width: $line-width; */
@@ -49,7 +51,9 @@
   color: #fff;
 }
 
-/* running-line codepen */
+
+
+/* ============= section Stats running-line codepen ================== */
 
 /* .header {
   background: #212121;
@@ -109,3 +113,9 @@
     transform: translate(-100%, 0);
   }
 }
+
+
+
+
+
+
