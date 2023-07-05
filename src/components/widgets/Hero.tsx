@@ -84,6 +84,7 @@ export default component$(() => {
                 width={493}
                 height={616}
                 alt="Hero Image "
+                placeholder="transparent"
                 // bg-gray-400 dark:bg-slate-700
                 class="mx-auto w-full rounded-md md:h-full drop-shadow-2xl "
                 breakpoints={[320, 480, 640, 1024]}

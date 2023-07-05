@@ -9,7 +9,8 @@ export default component$(() => {
     //
     //  bg-[url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80')]
     // bg-[url('https://www.dddkursk.ru/image/planet/002095.1b.jpg')]
-    <section class=" pt-24 flex flex-col items-center justify-center h-screen  bg-fixed bg-center bg-cover  bg-[url('https://kor.ill.in.ua/m/610x0/1629793.jpg')]">
+    // h-screen pt-24
+    <section class="  flex flex-col items-center justify-center   bg-fixed bg-center bg-cover  bg-[url('https://kor.ill.in.ua/m/610x0/1629793.jpg')]">
        
         
        
