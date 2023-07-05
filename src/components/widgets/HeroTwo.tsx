@@ -12,8 +12,8 @@ export default component$(() => {
     // h-screen pt-24
     // https://kor.ill.in.ua/m/610x0/1629793.jpg
     // bg-[url('../../assets/images/fon.jpg')]
-    <section class="  flex flex-col items-center justify-center   bg-fixed bg-center bg-cover  "
-    style="background-image: url('src/assets/images/fon.jpg')"
+    <section class="  flex flex-col items-center justify-center   bg-fixed bg-center bg-cover bg-[url('../../assets/images/fon.jpg')] "
+    // style="background-image: url('/images/fon.jpg')"
     >
        
         
