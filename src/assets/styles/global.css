@@ -71,11 +71,11 @@
     height: 65px;
     transform: translate(100%, 0);
 }
-  .header div p {
+  /* .header div p {
       font-family: 'Roboto', sans-serif;
       color: #fff339;
       text-transform: uppercase;
-    }
+    } */
 
     .header div  img {
       height: 60px;
