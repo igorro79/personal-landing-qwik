@@ -79,7 +79,7 @@ export default component$(() => {
             <div class="relative m-auto max-w-4xl">
               <Image
                 // src={coverImage}
-                src="src/assets/images/robotics.png"
+                src="images/robotics.png"
                 layout="constrained"
                 width={493}
                 height={616}
