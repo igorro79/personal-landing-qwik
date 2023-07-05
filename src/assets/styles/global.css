@@ -7,12 +7,12 @@
  */
 /*================== swiper style ================= */
 .mySwiper {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   padding-bottom: 30px;
 }
-.swiper-wrapper--init .swiper-slide {
-  max-width: 32%;
-}
+/* .swiper-wrapper--init .swiper-slide {
+  max-width: 33.33%;
+} */
 .mySwiper .swiper-pagination-bullet {
   width: 16px;
   height: 16px;

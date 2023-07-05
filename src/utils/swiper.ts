@@ -21,9 +21,9 @@ export const swiper = noSerialize(
     // Optional parameters
     // direction: "vertical",
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 30,
     loop: true,
-    // centeredSlides: true,
+    centeredSlides: true,
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
