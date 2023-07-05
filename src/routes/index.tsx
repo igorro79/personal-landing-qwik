@@ -11,21 +11,20 @@ import Stats from "~/components/widgets/Stats";
 import { SITE } from "~/config.mjs";
 import HeroTwo from "~/components/widgets/HeroTwo";
 import MainFormSection from "~/components/widgets/MainFormSection";
-
+import PageCarousel from "~/components/widgets/PageCarousel";
 
 export default component$(() => {
   return (
     <>
       <Hero />
-      <HeroTwo/>
+      <HeroTwo />
+      <PageCarousel />
       {/* <Features /> */}
       <FAQs />
-      
+
       <Stats />
       {/* <CallToAction /> */}
-      <MainFormSection/>
-
-      
+      <MainFormSection />
     </>
   );
 });
