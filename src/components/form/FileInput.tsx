@@ -61,7 +61,7 @@ export const FileInput = component$(
     return (
       <div class={`group relative inline-block w-fit ${props.class}`}>
         <label for={name} class={`label-file flex cursor-pointer items-center`}>
-          <span class="flex h-[38px] min-w-[38px] items-center justify-center rounded-full bg-bgColorBtnForm transition-all group-hover:bg-main">
+          <span class="flex h-[38px] min-w-[38px] items-center justify-center rounded-full bg-[#1d3269] transition-all group-hover:bg-main">
             <svg
               width="15"
               height="20"

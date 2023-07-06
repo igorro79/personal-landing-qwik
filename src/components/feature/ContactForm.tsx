@@ -208,7 +208,7 @@ export default component$(
                 Genom att klicka på knappen "Skicka" samtycker du till
                 behandling av personuppgifter.
                 <a
-                  class="pl-[10px] text-xs font-medium leading-4 text-mainTextBlue underline hover:text-linkActive active:text-linkActive"
+                  class="pl-[10px] text-xs font-medium leading-4 text-[#00ffff] underline hover:text-linkActive active:text-linkActive"
                   href="#"
                   target="_blank"
                   rel="noreferrer noopener"

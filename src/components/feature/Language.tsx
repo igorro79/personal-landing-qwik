@@ -10,7 +10,7 @@ export default component$(() => {
   return (
   <>
     {/* <!--  BEGIN: buttons-languages-desktop --> */}
-            <div class="hidden  xl:block text-white ">
+            <div class="hidden  lg:block text-white ">
               {/* pl-[22px] xl:pl-[37px] 2xl:pl-[22px]*/}
               <div class="group/item flex items-center  xl:relative ">
                 {/* <!--  BEGIN: button-en --> */}

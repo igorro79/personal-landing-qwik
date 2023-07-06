@@ -85,7 +85,8 @@ export default component$(() => {
         // class={!show.value ? "invisible opacity-0" : "visible opacity-100"}
         class={!show.value ? "-translate-y-[150%]  " : "bg-blue-950/20"}
       />
-      <main class="relative z-10 bg-light dark:bg-dark">
+      {/* dark:bg-dark */}
+      <main class="relative z-10 bg-light dark:bg-[#3e3e60]">
         <Slot />
       </main>
       <Footer />

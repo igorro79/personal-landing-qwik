@@ -9,6 +9,28 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      screens: {
+      sm: "570px",
+      //=> @media (min-width: 360px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "820px",
+      // => @media (min-width: 820px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "1xl": "1366px",
+      // => @media (min-width: 1366px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+
+      "3xl": "1920px",
+      // => @media (min-width: 1920px) { ... }
+    },
 
 
       keyframes: {
@@ -38,13 +60,18 @@ module.exports = {
 
       innerWidth: {
         clampHeader: "clamp(280px, 5vw, 1140px)",
+        clampHeaderHeight: "clamp(280px, 5vw, 1140px)",
       },
+      // innerHeight: {
+       
+      //   clampHeaderHeight: "clamp(20px, 50%, 100px)",
+      // },
 
        fontSize: {
         // clamp: "clamp(1rem, 5vw, 3rem)",
          clampMenu: "clamp(0.75rem, 2vw, 1rem)",
-        clampTitle: "clamp(3rem, 5vw, 3rem)",
-        clamp: "clamp(1rem, 5vw, 1.5rem)",
+        clampTitle: "clamp(2rem, 5vw, 3rem)",
+        clampParagraph: "clamp(1rem, 5vw, 1.5rem)",
       },
        
       colors: {

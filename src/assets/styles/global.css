@@ -52,6 +52,16 @@
   display: block;
 }
 
+
+/* .width-header {
+  width: clamp(280px, 87%, 1140px);
+}
+
+.top-header {
+  top: clamp(20px, 87%, 45px);
+} */
+
+
 /* =============== app-test-01 running-line -???????????  ==================== */
 .runningLine__content {
   min-width: max-content;
@@ -118,3 +128,37 @@
     transform: translate(-100%, 0);
   }
 }
+
+
+/* bg-image */
+/* .hero {  
+ 
+  background-image:  url(../images/header/Header-img-480.jpg);
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image:   url(../images/header/Header-img-768.jpg);
+   
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+   
+    background-image:    url(../images/header/Header-Img-1600.jpg);
+
+  }
+} */
+
+.box2 {
+  box-shadow: inset 0px -12px 64px -3px rgb(0 0 0 / 0.1)
+  /* box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.7); */
+}
+

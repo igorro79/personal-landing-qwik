@@ -11,9 +11,10 @@ export default component$(() => {
   return (
     // dark:bg-none  ${redGradientStyle}
     <section
+      id="contact"
       class={`form lg:rounded-b-10 rounded-b-[30px] bg-gradient-to-r from-[#0d9fe1] to-[#202157]  pb-[50px] pt-8 lg:pb-[49px] lg:pt-[49px] xl:rounded-b-[50px] xl:pb-[58px] xl:pt-[41px] 2xl:pb-[58px] 2xl:pt-[90px] `}
     >
-      <div class="container sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]">
+      <div class="container px-4 sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]">
         <div id="mainFormWrapper" class="sticky">
           <div>
             <p class="mb-[26px] text-xs font-bold leading-4 text-middleGrey lg:mb-[17px] lg:leading-[140%] xl:hidden">

@@ -7,12 +7,13 @@ export const IconMoon = (props: ItemProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class={`icon icon-tabler icon-tabler-moon ${className || "w-5 h-5"}`}
+      class={`icon icon-tabler icon-tabler-moon hover:stroke-[#94a3b8] ${className || "w-5 h-5"}`}
       width="24"
       height="24"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
+      // stroke="currentColor"
+      stroke="#cbd5e1"
       fill="none"
       stroke-linecap="round"
       stroke-linejoin="round"

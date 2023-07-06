@@ -19,7 +19,9 @@ export default component$(() => {
   });
 
   return (
-    <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-3xl">
+    // shadow-inner   max-w-3xl   sm:py-16  border-b  border-b-sky-500
+    <section class=" box2 px-6 sm:px-6 pt-28  py-12 sm:py-24 lg:py-28  mx-auto 
+    ">
       <header>
         <h1 class="text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-8 md:mb-16 font-heading">
           Blog
@@ -78,6 +80,9 @@ export default component$(() => {
           </li>
         ))}
       </ul>
+
+     
+      
     </section>
   );
 });
