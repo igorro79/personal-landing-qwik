@@ -317,7 +317,7 @@ export default component$(() => {
                 aria-label="instagram"
                 class="social__link "
               >
-                <span class="icon">
+                <span class="icon ">
                   <svg
                     fill="currentColor"
                     class="h-[29px] w-[29px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] transition ease-in-out duration-500 hover:scale-125"

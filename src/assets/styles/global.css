@@ -6,13 +6,14 @@
  *
  */
 /*================== swiper style ================= */
-.mySwiper {
-  /* max-width: 1280px; */
+/* .mySwiper {
+  max-width: 1280px;
   padding-bottom: 30px;
-}
-/* .swiper-wrapper--init .swiper-slide {
-  max-width: 33.33%;
 } */
+.swiper-wrapper--init .swiper-slide img {
+  border-radius: 20px;
+  /* max-width: 33.33%; */
+}
 .mySwiper .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
@@ -162,3 +163,8 @@
   /* box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.7); */
 }
 
+/* footer */
+
+.icon{
+  color: #64748b;
+}
