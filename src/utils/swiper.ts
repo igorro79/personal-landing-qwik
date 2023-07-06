@@ -35,8 +35,8 @@ export const swiper = noSerialize(
       delay: 1000,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-custom-button--next",
+      prevEl: ".swiper-custom-button--prev",
     },
   })
 );

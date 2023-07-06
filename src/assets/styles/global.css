@@ -6,13 +6,20 @@
  *
  */
 /*================== swiper style ================= */
-/* .mySwiper {
-  max-width: 1280px;
-  padding-bottom: 30px;
-} */
-.swiper-wrapper--init .swiper-slide img {
-  border-radius: 20px;
-  /* max-width: 33.33%; */
+.swiper-slide {
+  @apply max-w-[33%];
+}
+.swiper-custom-button {
+  @apply absolute z-10 top-[calc(50%-40px)] w-10 h-10 text-blue-600 rounded-full bg-white hover:bg-slate-300 flex justify-center items-center text-2xl cursor-pointer;
+}
+.swiper-custom-button--prev {
+  @apply left-10;
+}
+.swiper-custom-button--next {
+  @apply right-10;
+}
+.swiper-slide img {
+  @apply rounded-xl;
 }
 .mySwiper .swiper-pagination-bullet {
   width: 16px;
@@ -84,7 +91,6 @@
   display: block;
 }
 
-
 /* .width-header {
   width: clamp(280px, 87%, 1140px);
 }
@@ -92,7 +98,6 @@
 .top-header {
   top: clamp(20px, 87%, 45px);
 } */
-
 
 /* =============== app-test-01 running-line -???????????  ==================== */
 .runningLine__content {
@@ -161,7 +166,6 @@
   }
 }
 
-
 /* bg-image */
 /* .hero {  
  
@@ -190,7 +194,7 @@
 } */
 
 .box2 {
-  box-shadow: inset 0px -12px 64px -3px rgb(0 0 0 / 0.1)
+  box-shadow: inset 0px -12px 64px -3px rgb(0 0 0 / 0.1);
   /* box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.7); */
 }
 
@@ -198,9 +202,11 @@
 
 /* footer */
 
-/* .icon{
+
+.icon{
+
   color: #64748b;
-} */
+}
 
 
 
