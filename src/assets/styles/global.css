@@ -74,6 +74,22 @@
     @apply rounded-full border-[1px] border-middleGrey transition ease-in hover:border-white;
   }
 
+  .border__left {
+    @apply border-l-[1px] border-l-middleGrey;
+  }
+
+  .border__right {
+    @apply border-r-[1px] border-r-middleGrey;
+  }
+
+  .border__bottom {
+    @apply border-b-[1px] border-b-middleGrey;
+  }
+
+  .border__rounded_s {
+    @apply rounded-full border-[1px] border-middleGrey transition ease-in hover:border-white;
+  }
+
   /* icons-menu */
   .social__link span {
     @apply flex h-[46.24px] w-[46.24px] items-center justify-center rounded-full bg-lightGrey text-dark transition-all dark:text-dark xl:h-[50px] xl:w-[50px];

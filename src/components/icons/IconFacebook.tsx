@@ -1,17 +1,7 @@
 export const IconFacebook = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="icon icon-tabler icon-tabler-brand-facebook w-5 h-5"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    stroke-width="2"
-    stroke="currentColor"
-    fill="none"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-  </svg>
+ <svg
+                    class="h-[20px] w-[20px] lg:h-[22px] lg:w-[23px] xl:h-[23px] xl:w-[23px] "
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
 );
