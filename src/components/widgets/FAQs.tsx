@@ -48,14 +48,14 @@ export default component$(() => {
   ];
 
   return (
-    <section class="py-16 border-t text-[#457292] border-gray-200 dark:border-slate-800">
+    <section class="py-8 border-t text-[#457292] border-gray-200 dark:border-slate-800">
       <div class="px-4  mx-auto max-w-6xl lg:py-20">
         <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
           {/* <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"> */}
             {/* <p class="text-base text-primary-600 dark:text-purple-200 font-semibold tracking-wide uppercase">
               FAQs
             </p> */}
-            <h2 class="max-w-lg mb-4 text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto font-heading">
+            <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto font-heading">
               Frequently Asked Questions
             </h2>
           {/* </div> */}
@@ -74,13 +74,22 @@ export default component$(() => {
                           // data-collapse-target="collapse-1"
                           data-collapse-target={collapse}
                         >
-                          <h3 class="  text-xl font-bold hover:translate-x-4 transition ease-in-out duration-500 ">
+                          <h3 class=" pr-6 text-xl font-bold hover:translate-x-4 transition ease-in-out duration-500 ">
                             <IconArrowDownRight class="w-7 h-7 mr-4 text-secondary-500 inline-block" />
                             {question}
                           </h3>
                           {/* <span class="uppercase ">Descrioption</span> */}
-                          <i class="fa fa-plus absolute right-3.5 pt-1 text-xl group-open:opacity-0"></i>
-                          <i class="fa fa-minus absolute right-3.5 pt-1 text-xl opacity-0 group-open:opacity-100"></i>
+                          <svg
+                          class="w-6 h-6 fill-[#457292] absolute right-3.5 pt-1 text-xl group-open:opacity-0"
+                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                            
+                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" /></svg>
+                          
+                          <svg
+                            class="w-6 h-6 fill-[#457292] absolute right-3.5 pt-1 text-xl opacity-0 group-open:opacity-100"
+                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" /></svg>
+                          {/* <i class="fa fa-plus absolute right-3.5 pt-1 text-xl group-open:opacity-0"></i>
+                          <i class="fa fa-minus absolute right-3.5 pt-1 text-xl opacity-0 group-open:opacity-100"></i> */}
                         </button>
                       </h6>
                       <div

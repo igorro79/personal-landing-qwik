@@ -60,13 +60,18 @@ module.exports = {
 
       innerWidth: {
         clampHeader: "clamp(280px, 5vw, 1140px)",
+        clampHeaderHeight: "clamp(280px, 5vw, 1140px)",
       },
+      // innerHeight: {
+       
+      //   clampHeaderHeight: "clamp(20px, 50%, 100px)",
+      // },
 
        fontSize: {
         // clamp: "clamp(1rem, 5vw, 3rem)",
          clampMenu: "clamp(0.75rem, 2vw, 1rem)",
-        clampTitle: "clamp(3rem, 5vw, 3rem)",
-        clamp: "clamp(1rem, 5vw, 1.5rem)",
+        clampTitle: "clamp(2rem, 5vw, 3rem)",
+        clampParagraph: "clamp(1rem, 5vw, 1.5rem)",
       },
        
       colors: {

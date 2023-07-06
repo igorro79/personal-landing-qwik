@@ -64,9 +64,9 @@ export default component$(() => {
         />
 
          {/* TODO added carousel tailwind 27.06.2023 */}
-       {/* <link
+       <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" /> */}
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
        
 
@@ -88,7 +88,7 @@ export default component$(() => {
         {/* TODO added carousel tailwind 27.06.2023 */}
         {/* <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> */}
          {/* <!-- from cdn !!!!!!!!!!!--> */}
-{/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script> */}
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 
         {/* <!-- from cdn --> */}
 {/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script> */}

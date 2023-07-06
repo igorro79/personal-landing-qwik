@@ -52,7 +52,7 @@ export default component$(() => {
               {/* </div> */}
             </div>
 
-            <p class="text-white mt-8 text-[clamp(1rem, 5vw, 1.5rem)] ">
+            <p class="text-white mt-8 text-clampParagraph ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptates vero nostrum veritatis alias quibusdam repellendus
               tempore doloremque cumque sapiente eum laudantium modi quaerat
@@ -66,7 +66,7 @@ export default component$(() => {
             <button
               type="button"
               onClick$={openProfile}
-              class=" mt-12 rounded-full w-full  px-3.5 py-4 text-sm font-semibold text-white text-center shadow-sm  
+              class=" mt-12 rounded-full w-full lg:w-80  px-3.5 py-4 text-sm font-semibold text-white text-center shadow-sm  
                 bg-gradient-to-r from-[#9f17ff] to-[#4d1bff]
                transition ease-in duration-150  hover:from-[#00ff8e] hover:to-[#47b595]
                  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

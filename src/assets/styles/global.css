@@ -40,6 +40,13 @@
   display: block;
 }
 
+/* .width-header {
+  width: clamp(280px, 87%, 1140px);
+}
+
+.top-header {
+  top: clamp(20px, 87%, 45px);
+} */
 
 /* =============== app-test-01 running-line -???????????  ==================== */
 .runningLine__content {
@@ -112,8 +119,29 @@
   }
 }
 
+/* bg-image */
+/* .hero {  
+ 
+  background-image:  url(../images/header/Header-img-480.jpg);
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image:   url(../images/header/Header-img-768.jpg);
+   
+  }
 
+}
 
+@media screen and (min-width: 1200px) {
+  .hero {
+   
+    background-image:    url(../images/header/Header-Img-1600.jpg);
 
+  }
+} */

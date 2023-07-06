@@ -53,36 +53,36 @@ export default component$((props: HeaderProps) => {
 
   return (
     <>
-      {/* sticky  sticky*/}
-      <header
-        // class={`fixed z-30 top-header transition ease-in-out duration-500   flex-none mx-auto  width-header backdrop-blur-sm bg-white/30
-        // ${!show.value ? "-translate-y-[150%] " : ""}
-        // `}
-        // md:bg-slate-300/50 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-slate-300/50 dark:bg-slate-900
-        class={`fixed w-full z-30 top-header  transition ease-in-out duration-300  flex-none mx-auto  width-header backdrop-blur-xl ${props.class}
+      {/* clamp(280px, 5vw, 1140px) */}
+      <header        
+        class={`fixed py-4 Lpy-6 w-full z-30   transition ease-in-out duration-300  flex-none mx-auto  width-header backdrop-blur-xl ${props.class}
          ${ store.isScrolling
           ? "bg-black "
           : ""
       } `}
         id="header"
       >
-        <div class="py-5 px-6 mx-auto   md:flex justify-between   md:px-12">
-          <div class="flex ">
+        <div class=" px-4 mx-auto   md:flex justify-between   md:px-12">
+
+          <div class="flex justify-between">
             <div class="flex ">
               <Link class="flex items-center" href={"/"}>
                 <Logo />
               </Link>
-              <div class="hidden items-center md:flex">
+              {/* hidden */}
+              <div class=" items-center md:flex">
                 <ToggleTheme iconClass="w-6 h-6" />
               </div>
-              <div class="flex items-center md:hidden">
+             
+            </div>
+             <div class="flex items-center md:hidden">
                 {/* <ToggleTheme iconClass="w-6 h-6" /> */}
                 <ToggleMenu iconClass="w-6 h-6" />
               </div>
-            </div>
           </div>
 
-          <div class="md:self-center flex items-center  mb-4 md:mb-0 ">
+          {/* mb-4 md:mb-0 */}
+          <div class="md:self-center flex items-center   ">
             <nav
               class="items-center w-full md:w-auto hidden md:flex text-white text-clampMenu  dark:text-slate-200 h-[calc(100vh-100px)] md:h-auto overflow-y-auto md:overflow-visible "
               aria-label="Main navigation"

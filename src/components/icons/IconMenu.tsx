@@ -15,13 +15,16 @@ export const IconMenu = (props: ItemProps) => {
       <g
         class="icon-tabler"
         fill="none"
-        stroke="currentColor"
+        // stroke="currentColor"
+       stroke="#cbd5e1"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
+        
       >
         <path d="M4 8h16"></path>
         <path d="M4 16h16"></path>
+        
       </g>
     </svg>
   );
