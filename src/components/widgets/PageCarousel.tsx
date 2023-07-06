@@ -1,8 +1,6 @@
 // import Swiper and modules styles
-import {
-  HiChevronLeftSolid,
-  HiChevronRightSolid,
-} from "@qwikest/icons/heroicons";
+import { ChevronRight } from "~/components/icons/ChevronRight";
+import { ChevronLeft } from "~/components/icons/ChevronLeft";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -354,10 +352,10 @@ export default component$(() => {
           <div class="swiper-pagination"></div>
 
           <div class="swiper-custom-button swiper-custom-button--prev">
-            <HiChevronLeftSolid />
+            <ChevronLeft />
           </div>
           <div class="swiper-custom-button swiper-custom-button--next">
-            <HiChevronRightSolid />
+            <ChevronRight />
           </div>
         </div>
       </section>
