@@ -71,7 +71,7 @@
     }
   
     .border__rounded_s {
-      @apply rounded-full border-[1px] border-middleGrey transition ease-in hover: border-white;
+      @apply rounded-full border-[1px] border-middleGrey transition ease-in hover:border-white;
     }
 
         /* icons-menu */
