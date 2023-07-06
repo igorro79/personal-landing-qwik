@@ -1,4 +1,8 @@
 // import Swiper and modules styles
+import {
+  HiChevronLeftSolid,
+  HiChevronRightSolid,
+} from "@qwikest/icons/heroicons";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -28,7 +32,7 @@ export default component$(() => {
         <div class="swiper mySwiper w-full">
           <div class="swiper-wrapper swiper-wrapper--init ">
             <div class="swiper-slide">
-               <picture>
+              <picture>
                 <source
                   media="(min-width:820px)"
                   type="image/webp"
@@ -59,10 +63,9 @@ export default component$(() => {
                 class="rounded-md mx-auto"
                 breakpoints={[320, 480, 640, 1024]}
               /> */}
-              <div class="swiper-lazy-preloader"></div>
             </div>
             <div class="swiper-slide ">
-               <picture>
+              <picture>
                 <source
                   media="(min-width:820px)"
                   type="image/webp"
@@ -93,10 +96,9 @@ export default component$(() => {
                 class="rounded-md mx-auto"
                 breakpoints={[320, 480, 640, 1024]}
               /> */}
-              <div class="swiper-lazy-preloader"></div>
             </div>
             <div class="swiper-slide ">
-               <picture>
+              <picture>
                 <source
                   media="(min-width:820px)"
                   type="image/webp"
@@ -163,7 +165,7 @@ export default component$(() => {
               /> */}
             </div>
 
-             <div class="swiper-slide ">
+            <div class="swiper-slide ">
               <picture>
                 <source
                   media="(min-width:820px)"
@@ -197,7 +199,7 @@ export default component$(() => {
               /> */}
             </div>
 
-             <div class="swiper-slide ">
+            <div class="swiper-slide ">
               <picture>
                 <source
                   media="(min-width:820px)"
@@ -231,7 +233,7 @@ export default component$(() => {
               /> */}
             </div>
 
-             <div class="swiper-slide ">
+            <div class="swiper-slide ">
               <picture>
                 <source
                   media="(min-width:820px)"
@@ -265,7 +267,7 @@ export default component$(() => {
               /> */}
             </div>
 
-             <div class="swiper-slide ">
+            <div class="swiper-slide ">
               <picture>
                 <source
                   media="(min-width:820px)"
@@ -309,7 +311,7 @@ export default component$(() => {
                 class="rounded-md mx-auto"
                 breakpoints={[320, 480, 640, 1024]}
               />
-              <div class="swiper-lazy-preloader"></div>
+              
             </div>
             <div class="swiper-slide ">
               <Image
@@ -321,7 +323,7 @@ export default component$(() => {
                 class="rounded-md mx-auto"
                 breakpoints={[320, 480, 640, 1024]}
               />
-              <div class="swiper-lazy-preloader"></div>
+              
             </div>
 
             <div class="swiper-slide ">
@@ -351,8 +353,12 @@ export default component$(() => {
           <div class="w-full h-10"></div>
           <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-custom-button swiper-custom-button--prev">
+            <HiChevronLeftSolid />
+          </div>
+          <div class="swiper-custom-button swiper-custom-button--next">
+            <HiChevronRightSolid />
+          </div>
         </div>
       </section>
     </>
