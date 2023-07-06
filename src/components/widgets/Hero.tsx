@@ -19,9 +19,9 @@ export default component$(() => {
   });
 
   return (
-    // bg-gradient-to-r from-sky-500 to-indigo-500  mt-[-90px]
+    // bg-gradient-to-r from-sky-500 to-indigo-500  mt-[-90px] md:h-screen 2xl:h-auto
     <section
-      class={`pt-[125px] bg-gradient-to-br from-[#0d9fe1] to-[#202157] dark:bg-none  md:h-screen  2xl:h-auto `}
+      class={`pt-[125px] pb-[50px] bg-gradient-to-br from-[#0d9fe1] to-[#202157] dark:bg-none     `}
     >
       {/* md:flex */}
       <div class="max-w-7xl mx-auto px-4 sm:px-6  ">
@@ -77,7 +77,7 @@ export default component$(() => {
           </div>
 
           {/* flex-1 */}
-          <div class="block md:flex items-center  lg:basis-1/2 xl:basis-1/3">
+          <div class=" block md:flex items-center  lg:basis-1/2 xl:basis-1/3">
             <div class="relative  m-auto max-w-4xl">
 
               

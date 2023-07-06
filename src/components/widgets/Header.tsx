@@ -106,11 +106,13 @@ export default component$((props: HeaderProps) => {
                       )}
 
                       {item.items ? (
-                        <ul class="dropdown-menu rounded absolute p-4 hidden font-medium text-slate-900 md:bg-white md:min-w-[200px] dark:md:bg-slate-800 drop-shadow-xl">
+                        // dark:md:bg-slate-800
+                        <ul class="dropdown-menu rounded absolute p-4 hidden font-medium text-slate-900 md:bg-white md:min-w-[200px] dark:md:bg-white drop-shadow-xl">
                           {item.items.map((item2, i2) => (
                             <li key={i2}>
+                              {/* dark:hover:bg-gray-700 */}
                               <a
-                                class="font-medium text-base leading-5 rounded-t md:hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap"
+                                class="font-medium text-base leading-5 rounded-t md:hover:bg-gray-100 dark:hover:bg-gray-700/30 py-2 px-4 block whitespace-no-wrap"
                                 href={item2.href}
                               >
                                 {item2.text}

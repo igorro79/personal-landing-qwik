@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 // @ts-ignore
-import logoSrc from "~/assets/images/logo.png?width=64&height=64&png";
+import logoSrc from "~/assets/images/logo-03.png?width=64&height=64&png";
 
 export default component$(() => (
   // font-bold ml-4

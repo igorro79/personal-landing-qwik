@@ -48,7 +48,7 @@ export default component$(() => {
   ];
 
   return (
-    <section class="py-8 border-t text-[#457292] border-gray-200 dark:border-slate-800">
+    <section class="py-8 border-t text-[#457292] border-gray-200 dark:border-slate-800 dark:text-white">
       <div class="px-4  mx-auto max-w-6xl lg:py-20">
         <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
           {/* <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"> */}
@@ -61,32 +61,32 @@ export default component$(() => {
           {/* </div> */}
         </div>
        
-        <div class="max-w-screen-xl sm:mx-auto">
+        <div class="max-w-screen-xl sm:mx-auto ">
           <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 md:grid-cols-1">
             {items.map((subitems, index) => (
               <div key={index} class="space-y-8">
                 {subitems.map(({ collapse, question, answer }, index2) => (
                   <div key={index2}>
                     <div class="relative ">
-                      <h6 class="mb-0 text-[#457292]">
+                      <h6 class="mb-0 text-[#457292] dark:text-white">
                         <button
-                          class="border-[#457292]  rounded-t-1 group relative flex w-full cursor-pointer items-center border-b border-solid py-3.5 text-left font-semibold  transition-all ease-in"
+                          class="border-[#45729252]  rounded-t-1 group relative flex w-full cursor-pointer items-center border-b border-solid py-3.5 text-left font-semibold  transition-all ease-in"
                           // data-collapse-target="collapse-1"
                           data-collapse-target={collapse}
                         >
-                          <h3 class=" pr-6 text-xl font-bold hover:translate-x-4 transition ease-in-out duration-500 ">
+                          <h3 class=" pr-6 text-xl font-bold hover:translate-x-2 transition ease-in-out duration-500 ">
                             <IconArrowDownRight class="w-7 h-7 mr-4 text-secondary-500 inline-block" />
                             {question}
                           </h3>
                           {/* <span class="uppercase ">Descrioption</span> */}
                           <svg
-                          class="w-6 h-6 fill-[#457292] absolute right-3.5 pt-1 text-xl group-open:opacity-0"
+                          class="w-6 h-6 fill-[#457292] dark:fill-white absolute right-3.5 pt-1 text-xl group-open:opacity-0"
                             xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                             
                             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" /></svg>
                           
                           <svg
-                            class="w-6 h-6 fill-[#457292] absolute right-3.5 pt-1 text-xl opacity-0 group-open:opacity-100"
+                            class="w-6 h-6 fill-[#457292] dark:fill-white absolute right-3.5 pt-1 text-xl opacity-0 group-open:opacity-100"
                             xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" /></svg>
                           {/* <i class="fa fa-plus absolute right-3.5 pt-1 text-xl group-open:opacity-0"></i>
                           <i class="fa fa-minus absolute right-3.5 pt-1 text-xl opacity-0 group-open:opacity-100"></i> */}

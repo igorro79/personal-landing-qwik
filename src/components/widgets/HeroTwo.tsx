@@ -44,19 +44,19 @@ export default component$(() => {
               </a>
             </div>
           </div> */}
-          <div class="  text-center">
+          <div class="  text-center p-5 backdrop-blur-sm bg-slate-900/50  rounded-xl">
             {/* text-gray-900 */}
             <h1 class="dark:text-white  text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Data to enrich your online business
             </h1>
-            <p class="dark:text-white  mt-6 text-lg leading-8 text-gray-600">
+            <p class="dark:text-white  mt-6 text-lg leading-8 text-white/90">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.
               </p>
-               <div class="p-5 text-2xl text-white bg-slate-900 bg-opacity-50 rounded-xl">
+               {/* <div class="p-5 text-2xl text-white bg-slate-900 bg-opacity-50 rounded-xl">
           Welcome to my site!
-              </div>
+              </div> */}
               {/* button */}
             <div
               
@@ -64,8 +64,9 @@ export default component$(() => {
             >
               {/* bg-indigo-600 hover:bg-indigo-500 */}
               {/* <a href="#"></a> */}
+              {/* rounded-md  */}
               <div
-                class="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  
+                class="rounded-full  px-10 py-2.5 text-sm font-semibold text-white shadow-sm  
                 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 
                  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >

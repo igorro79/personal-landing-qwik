@@ -12,4 +12,4 @@
 
 ## [BLOG](/blog)
 
-## [CONTACT](/#)
+## [CONTACT](#contact)

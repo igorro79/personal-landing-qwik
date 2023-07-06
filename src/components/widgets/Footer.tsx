@@ -134,9 +134,10 @@ export default component$(() => {
     //   </div>
     // </footer>
 
-     <footer
+    <footer
+      
       class=" sticky bottom-[-320px] 
-    bg-light pb-4 pt-[40px] dark:bg-dark  sm:bottom-[-0px] lg:pb-[21px] lg:pt-[32px] xl:pb-[28px] xl:pt-[34px]"
+    bg-light pb-4 pt-[40px] dark:bg-[#3e3e60]  sm:bottom-[-0px] lg:pb-[21px] lg:pt-[32px] xl:pb-[28px] xl:pt-[34px]"
     >
       <div class="container p-4 sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]">
         {/* <!-- Lock-also  up --> */}

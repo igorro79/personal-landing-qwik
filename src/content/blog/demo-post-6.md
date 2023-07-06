@@ -2,7 +2,8 @@
 publishDate: 2023-02-06T00:00:00Z
 title: Ut laborum cillum laboris fugiat culpa
 excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat
-image: /images/placeholder-1024x640.png
+# image: /images/placeholder-1024x640.png
+image: /images/sky.jpg
 tags:
   - markdown
   - blog
