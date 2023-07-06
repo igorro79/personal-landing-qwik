@@ -107,7 +107,7 @@ export default component$((props: HeaderProps) => {
 
                       {item.items ? (
                         // dark:md:bg-slate-800
-                        <ul class="dropdown-menu rounded absolute p-4 hidden font-medium text-slate-900 md:bg-white md:min-w-[200px] dark:md:bg-white drop-shadow-xl">
+                        <ul class="dropdown-menu rounded absolute p-4 hidden font-medium text-slate-900 bg-white md:min-w-[200px] dark:bg-white drop-shadow-xl">
                           {item.items.map((item2, i2) => (
                             <li key={i2}>
                               {/* dark:hover:bg-gray-700 */}
