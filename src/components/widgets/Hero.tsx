@@ -1,5 +1,5 @@
 import { component$, useContext, $ } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
+// import { Image } from "@unpic/qwik";
 import { GlobalContext } from "~/root";
 // import coverImage from "~/assets/images/robotics.png";
 import coverImageMobile from "~/assets/images/robotics-320.png";
