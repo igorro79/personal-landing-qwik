@@ -136,14 +136,14 @@ export default component$(() => {
 
      <footer
       class=" sticky bottom-[-320px] 
-    bg-light pb-4 pt-[40px] dark:bg-dark sm:bottom-[-0px] lg:pb-[21px] lg:pt-[32px] xl:pb-[28px] xl:pt-[34px]"
+    bg-light pb-4 pt-[40px] dark:bg-dark  sm:bottom-[-0px] lg:pb-[21px] lg:pt-[32px] xl:pb-[28px] xl:pt-[34px]"
     >
-      <div class="container sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]">
+      <div class="container p-4 sm:max-w-full lg:px-[30px] 3xl:max-w-[1920px] 3xl:px-[135px]">
         {/* <!-- Lock-also  up --> */}
-        <div class="mb-[42px] flex justify-between">
+        <div class="mb-[42px] flex justify-between ">
           {/* text-middleGrey */}
           <Link
-            class="cursor-pointer text-sm font-medium leading-[1.3] text-slate-900/50"
+            class="cursor-pointer text-sm font-medium leading-[1.3] text-slate-900/50 dark:text-[#94a3b8]"
             href="#http://"
             target="_blank"
             rel="noopener noreferrer"
@@ -155,7 +155,7 @@ export default component$(() => {
             type="button"
             id="upButton"
             aria-label="button up"
-            class="flex items-center text-sm font-medium leading-[1.3] text-slate-900/50 transition-all hover:text-main active:text-main"
+            class="flex items-center text-sm font-medium leading-[1.3] text-slate-900/50 dark:text-[#94a3b8] transition-all hover:text-main dark:hover:text-main active:text-main"
           >
             Up
             <svg
@@ -472,7 +472,7 @@ export default component$(() => {
           </ul>
         </div>
 
-        <div class="flex flex-col items-center gap-[5px] pt-[22px] text-slate-900/50 lg:flex-row lg:justify-center lg:gap-[31px] lg:pt-0 xl:gap-[40px]">
+        <div class="flex flex-col items-center gap-[5px] pt-[22px] text-slate-900/50 dark:text-[#94a3b8]  lg:flex-row lg:justify-center lg:gap-[31px] lg:pt-0 xl:gap-[40px]">
           <a
             href="#"
             class="text-xs font-medium leading-[22px]  transition ease-in hover:text-main xl:text-base"
