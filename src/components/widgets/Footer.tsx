@@ -145,7 +145,7 @@ export default component$(() => {
           {/* text-middleGrey */}
           <Link
             class="cursor-pointer text-sm font-medium leading-[1.3] text-slate-900/50 dark:text-[#94a3b8]"
-            href="#http://"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -318,9 +318,10 @@ export default component$(() => {
                 class="social__link "
               >
                 <span class="icon ">
+                  {/* transition ease-in-out duration-500 hover:scale-125 */}
                   <svg
                     fill="currentColor"
-                    class="h-[29px] w-[29px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] transition ease-in-out duration-500 hover:scale-125"
+                    class="h-[29px] w-[29px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] "
                     viewBox="0 0 38 39"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -351,7 +352,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[20px] w-[20px] lg:h-[22px] lg:w-[23px] xl:h-[23px] xl:w-[23px] transition ease-in-out duration-500 hover:scale-125"
+                    class="h-[20px] w-[20px] lg:h-[22px] lg:w-[23px] xl:h-[23px] xl:w-[23px] "
                     viewBox="0 0 29 29"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -380,7 +381,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[32px] w-[31px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] transition ease-in-out duration-500 hover:scale-125"
+                    class="h-[32px] w-[31px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] "
                     viewBox="0 0 38 39"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -407,7 +408,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] xl:h-[30px] xl:w-[30px] transition ease-in-out duration-500 hover:scale-125"
+                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] xl:h-[30px] xl:w-[30px] "
                     viewBox="0 0 38 39"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -437,7 +438,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[20px] w-[27px] lg:h-[30px] lg:w-[30px] xl:h-[32px] xl:w-[32px] transition ease-in-out duration-500 hover:scale-125"
+                    class="h-[20px] w-[27px] lg:h-[30px] lg:w-[30px] xl:h-[32px] xl:w-[32px] "
                     viewBox="0 0 27 20"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
@@ -460,7 +461,7 @@ export default component$(() => {
               >
                 <span class="icon">
                   <svg
-                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] transition ease-in-out duration-500 hover:scale-125"
+                    class="h-[27px] w-[26px] lg:h-[30px] lg:w-[30px] "
                     fill="currentColor"
                     viewBox="0 0 24 19"
                     xmlns="http://www.w3.org/2000/svg"
