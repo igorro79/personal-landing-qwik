@@ -1,11 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { IconFacebook } from "../icons/IconFacebook";
+// import { IconFacebook } from "../icons/IconFacebook";
 import { IconInstagram } from "../icons/IconInstagram";
 import { IconLinkedin } from "../icons/IconLinkedin";
 import { IconTwitter } from "../icons/IconTwitter";
-import { IconUpwork } from "../icons/IconUpwork";
-import { IconYoutube } from "../icons/IconYoutube";
+// import { IconUpwork } from "../icons/IconUpwork";
+// import { IconYoutube } from "../icons/IconYoutube";
 
 // import { IconTwitter } from "~/components/icons/IconTwitter";
 // import { IconInstagram } from "~/components/icons/IconInstagram";
@@ -141,7 +141,6 @@ export default component$(() => {
     // </footer>
 
     <footer
-      
       class=" sticky bottom-[-320px] 
     bg-light pb-4 pt-[40px] dark:bg-[#3e3e60]  sm:bottom-[-0px] lg:pb-[21px] lg:pt-[32px] xl:pb-[28px] xl:pt-[34px]"
     >
@@ -323,8 +322,10 @@ export default component$(() => {
                 aria-label="instagram"
                 class="social__link"
               >
+
                 <span class="icon">
                   <IconInstagram/>
+
                 </span>
               </a>
             </li>
@@ -339,11 +340,14 @@ export default component$(() => {
                 class="social__link"
               >
                 <span class="icon">
+
                   <IconTwitter/>
+
                 </span>
               </a>
             </li>
             {/* <!-- linkedin --> */}
+
 
             <IconLinkedin/>
             
@@ -354,13 +358,16 @@ export default component$(() => {
             {/* <!-- youtube --> */}
 
             <svg
+
                     class="h-[20px] w-[27px] lg:h-[30px] lg:w-[30px] xl:h-[32px] xl:w-[32px] "
                     fill="currentColor"
+
                     xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
         <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
     </svg>
            
             {/* <!-- twitter --> */}
+
             <li>
               <a
                 href="#"
@@ -370,7 +377,7 @@ export default component$(() => {
                 class="social__link"
               >
                 <span class="icon">
-                  <IconTwitter/>
+                  <IconTwitter />
                 </span>
               </a>
             </li>
