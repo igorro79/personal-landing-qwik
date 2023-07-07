@@ -1,11 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { IconFacebook } from "../icons/IconFacebook";
-import { IconInstagram } from "../icons/IconInstagram";
-import { IconLinkedin } from "../icons/IconLinkedin";
-import { IconTwitter } from "../icons/IconTwitter";
-import { IconUpwork } from "../icons/IconUpwork";
-import { IconYoutube } from "../icons/IconYoutube";
+import { IconFacebook } from "../components/icons/IconFacebook";
+import { IconInstagram } from "../components/icons/IconInstagram";
+import { IconLinkedin } from "../components/icons/IconLinkedin";
+import { IconTwitter } from "../components/icons/IconTwitter";
+import { IconUpwork } from "../components/icons/IconUpwork";
+import { IconYoutube } from "../components/icons/IconYoutube";
 
 // import { IconTwitter } from "~/components/icons/IconTwitter";
 // import { IconInstagram } from "~/components/icons/IconInstagram";
