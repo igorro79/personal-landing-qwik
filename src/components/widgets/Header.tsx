@@ -62,7 +62,8 @@ export default component$((props: HeaderProps) => {
       } `}
         id="header"
       >
-        <div class=" px-4 mx-auto   md:flex justify-between   md:px-12">
+        {/* md:px-12 */}
+        <div class=" px-4 mx-auto max-w-7xl  md:flex justify-between   ">
 
           <div class="flex justify-between">
             <div class="flex ">

@@ -11,7 +11,7 @@
 } */
 /* TODO changes style 07.07.2023 */
 .swiper-slide {
-  @apply w-full  ;
+  @apply w-full;
 }
 /* text-blue-600 */
 .swiper-custom-button {
@@ -65,10 +65,26 @@
 
   /*============== border-style =============== */
   .border__top {
-    @apply border-t-[1px] border-t-middleGrey;
+    @apply border-t-[1px] border-t-lightGrey;
   }
 
   .border__left {
+    @apply border-l-[1px] border-l-lightGrey;
+  }
+
+  .border__right {
+    @apply border-r-[1px] border-r-lightGrey;
+  }
+
+  .border__bottom {
+    @apply border-b-[1px] border-b-lightGrey;
+  }
+
+  .border__rounded_s {
+    @apply rounded-full border-[1px] border-lightGrey transition ease-in hover:border-white;
+  }
+
+  /* .border__left {
     @apply border-l-[1px] border-l-middleGrey;
   }
 
@@ -82,23 +98,7 @@
 
   .border__rounded_s {
     @apply rounded-full border-[1px] border-middleGrey transition ease-in hover:border-white;
-  }
-
-  .border__left {
-    @apply border-l-[1px] border-l-middleGrey;
-  }
-
-  .border__right {
-    @apply border-r-[1px] border-r-middleGrey;
-  }
-
-  .border__bottom {
-    @apply border-b-[1px] border-b-middleGrey;
-  }
-
-  .border__rounded_s {
-    @apply rounded-full border-[1px] border-middleGrey transition ease-in hover:border-white;
-  }
+  } */
 
   /* icons-menu */
   .social__link span {
