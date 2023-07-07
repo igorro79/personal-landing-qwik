@@ -3,7 +3,7 @@ import { component$ } from "@builder.io/qwik";
 export const IconLinkedin = component$(() => {
   return (
     <svg
-      class="h-[32px] w-[31px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] "
+      class="h-[32px] w-[31px] lg:h-[30px] lg:w-[30px]  "
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       height="1em"

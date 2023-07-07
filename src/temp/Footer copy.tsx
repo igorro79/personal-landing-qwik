@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { IconFacebook } from "../components/icons/IconFacebook";
-import { IconInstagram } from "../components/icons/IconInstagram";
+import { IconInstagram } from "./IconInstagramFontAwesome";
 import { IconLinkedin } from "../components/icons/IconLinkedin";
 import { IconTwitter } from "../components/icons/IconTwitter";
 import { IconUpwork } from "../components/icons/IconUpwork";
