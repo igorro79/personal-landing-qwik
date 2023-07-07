@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { IconFacebook } from "../icons/IconFacebook";
+import { IconFacebook } from "~/components/icons/IconFacebook";
 import { IconInstagram } from "../icons/IconInstagram";
 // import { IconLinkedin } from "../icons/IconLinkedin";
 import { IconTwitter } from "../icons/IconTwitter";
@@ -63,8 +63,8 @@ export default component$(() => {
   const social = [
    
     { label: "Instagram", icon: IconInstagram, href: "https://www.instagram.com/uwp.digital/", target: "_blank",  rel: "noopener noreferrer" },
-    { label: "Facebook", icon: IconFacebook, href: "#" },
-     { label: "Twitter", icon: IconTwitter, href: "#" },
+    { label: "Facebook", icon: IconFacebook, href: "https://www.facebook.com/uwp.digital/", target: "_blank",  rel: "noopener noreferrer" },
+     { label: "Twitter", icon: IconTwitter, href: "#", target: "_blank",  rel: "noopener noreferrer" },
     // {
     //   label: "Github",
     //   icon: IconGithub,
