@@ -21,24 +21,15 @@ export default component$(() => {
   return (
     // bg-gradient-to-r from-sky-500 to-indigo-500  mt-[-90px] md:h-screen 2xl:h-auto
     <section
-      class={`pt-[125px] pb-[50px] bg-gradient-to-br from-[#0d9fe1] to-[#202157] dark:bg-none     `}
+      class={`pt-[92px] pb-[50px] bg-gradient-to-br from-[#0d9fe1] to-[#202157] dark:bg-none  2xl:pt-[160px] xl:h-screen  `}
     >
       {/* md:flex */}
       <div class="max-w-7xl mx-auto px-4 sm:px-6  ">
         {/* py-12 md:py-12 lg:py-16 block md:flex text-center md:text-left */}
-        <div class="lg:flex lg:gap-28">
+        {/* lg:grid-flow-col-dense */}
+        <div class="sm:grid sm:grid-cols-[45%_55%] sm:grid-flow-row-dense sm:gap-8 xl:grid-cols-[75%_25%] xl:gap-0">
           {/* pb-12 md:pb-0 md:py-0 mx-auto md:pr-16 flex items-center basis-3/5 */}
-          <div class="mb-4 lg:basis-1/2 xl:basis-2/3">
-            {/* <div class=""> */}
-            {/* <h1 class="text-5xl md:text-[3.48rem] font-bold leading-tighter tracking-tighter mb-4 font-heading px-4 md:px-0">
-                Robotics Artificial intelligence                 
-              </h1> */}
-            {/*  bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 */}
-
-            {/* text-6xl lg:text-6xl*/}
-
-            {/* flex items-center justify-start */}
-            <div class=" ">
+           <div class=" mb-4 xl:pt-12 ">
               {/* <div class="w-max"> */}
               {/* whitespace-nowrap  tracking-[1.5]  leading-normal*/}
               {/* animate-typing */}
@@ -50,7 +41,22 @@ export default component$(() => {
                 Robotics Artificial intelligence
               </h1>
               {/* </div> */}
-            </div>
+          </div>
+          
+          
+
+          {/* lg:col-start-1 lg:row-span-1 */}
+          <div class="mb-8 sm:col-start-1 xl:max-w-[600px]">
+            {/* <div class=""> */}
+            {/* <h1 class="text-5xl md:text-[3.48rem] font-bold leading-tighter tracking-tighter mb-4 font-heading px-4 md:px-0">
+                Robotics Artificial intelligence                 
+              </h1> */}
+            {/*  bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 */}
+
+            {/* text-6xl lg:text-6xl*/}
+
+            {/* flex items-center justify-start */}
+           
 
             <p class="text-white mt-8 text-clampParagraph ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -76,9 +82,11 @@ export default component$(() => {
             {/* </div> */}
           </div>
 
-          {/* flex-1 */}
-          <div class=" block md:flex items-center  lg:basis-1/2 xl:basis-1/3">
-            <div class="relative  m-auto max-w-4xl">
+          {/* flex-1 block md:flex items-center*/}
+          {/* lg:col-start-2 lg:row-start-1 */}
+          <div class="mb-4 sm:row-span-2 sm:col-start-2 lg:mb-8">
+            {/* max-w-4xl */}
+            <div class="relative  m-auto ">
 
               
                       <picture>
@@ -100,7 +108,7 @@ export default component$(() => {
                         />
 
                         <img
-                  class="h-auto w-full border-dark xl:max-w-[390px] 2xl:w-[390px]"
+                  class="h-auto w-full border-dark xl:max-w-[300px] "
                   width={500}
                 height={697}
                           srcSet={coverImageMobile}
@@ -124,7 +132,22 @@ export default component$(() => {
                 breakpoints={[320, 480, 640, 1024]}
               /> */}
             </div>
-          </div>
+            </div>
+            
+           
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 grid-flow-row-dense opacity-90">
+          <div class="bg-red-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-orange-500 rounded-lg shadow-xl min-h-[14px] col-span-3"/>
+          <div class="bg-yellow-500 rounded-lg shadow-xl min-h-[14px] row-span-2 col-span-2"/>
+          <div class="bg-green-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-teal-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-blue-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-indigo-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-purple-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-pink-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-slate-500 rounded-lg shadow-xl min-h-[14px]"/>
         </div>
       </div>
     </section>

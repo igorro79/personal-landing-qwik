@@ -70,8 +70,10 @@ module.exports = {
        fontSize: {
         // clamp: "clamp(1rem, 5vw, 3rem)",
          clampMenu: "clamp(0.75rem, 2vw, 1rem)",
-        clampTitle: "clamp(2rem, 5vw, 3rem)",
-        clampParagraph: "clamp(1rem, 5vw, 1.5rem)",
+        // clampTitle: "clamp(3rem, 5vw, 3rem)",
+        clampTitle: "clamp(48px, 5vw, 60px)",
+        // clampParagraph: "clamp(1rem, 5vw, 1.5rem)",
+        clampParagraph: "clamp(16px, 5vw, 20px)",
       },
        
       colors: {
