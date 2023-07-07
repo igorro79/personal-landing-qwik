@@ -74,7 +74,7 @@ export default component$(() => {
                           // data-collapse-target="collapse-1"
                           data-collapse-target={collapse}
                         >
-                          <h3 class=" pr-6 text-xl font-bold hover:translate-x-2 transition ease-in-out duration-500 ">
+                          <h3 class=" pr-6 text-xl  font-bold hover:translate-x-2 transition ease-in-out duration-500 ">
                             <IconArrowDownRight class="w-7 h-7 mr-4 text-secondary-500 inline-block" />
                             {question}
                           </h3>
