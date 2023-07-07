@@ -7,7 +7,7 @@ export const IconArrowDownRight = (props: ItemProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class={`icon icon-tabler icon-tabler-arrow-down-right ${
+      class={`icon icon-tabler icon-tabler-arrow-down-right stroke-[#457292] dark:stroke-white ${
         className || "w-5 h-5"
       }`}
       width="24"
