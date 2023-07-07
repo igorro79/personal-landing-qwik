@@ -2,7 +2,9 @@ import { component$ } from "@builder.io/qwik";
 
 export const IconInstagram = component$(() => {
   return (
+
     // TODO added icons with fontawesome 07.07.2023
+
     <svg
       xmlns="http://www.w3.org/2000/svg"
       height="1em" viewBox="0 0 448 512">       
