@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-// import { IconFacebook } from "../icons/IconFacebook";
+import { IconFacebook } from "../icons/IconFacebook";
 import { IconInstagram } from "../icons/IconInstagram";
-import { IconLinkedin } from "../icons/IconLinkedin";
+// import { IconLinkedin } from "../icons/IconLinkedin";
 import { IconTwitter } from "../icons/IconTwitter";
 // import { IconUpwork } from "../icons/IconUpwork";
 // import { IconYoutube } from "../icons/IconYoutube";
@@ -60,16 +60,17 @@ export default component$(() => {
   //   },
   // ];
 
-  // const social = [
-  //   { label: "Twitter", icon: IconTwitter, href: "#" },
-  //   { label: "Instagram", icon: IconInstagram, href: "#" },
-  //   { label: "Facebook", icon: IconFacebook, href: "#" },
-  //   {
-  //     label: "Github",
-  //     icon: IconGithub,
-  //     href: "https://github.com/onwidget/qwind",
-  //   },
-  // ];
+  const social = [
+   
+    { label: "Instagram", icon: IconInstagram, href: "https://www.instagram.com/uwp.digital/", target: "_blank",  rel: "noopener noreferrer" },
+    { label: "Facebook", icon: IconFacebook, href: "#" },
+     { label: "Twitter", icon: IconTwitter, href: "#" },
+    // {
+    //   label: "Github",
+    //   icon: IconGithub,
+    //   href: "https://github.com/onwidget/qwind",
+    // },
+  ];
 
   return (
     // <footer class="border-t border-gray-200 dark:border-slate-800">
@@ -312,9 +313,9 @@ export default component$(() => {
 
           {/* <!-- BEGIN: socials-footer --> */}
 
-          <ul class="lg:border__top flex flex-row items-center justify-center gap-2 pb-[19px] pt-[28px] sm:gap-5 lg:gap-[50px] lg:pb-[28px] lg:pt-[20px] xl:order-1 xl:mt-[-4px] xl:justify-end xl:gap-[24px] xl:border-t-0 xl:pb-[40px] xl:pl-0 xl:pr-0 xl:pt-0">
+          {/* <ul class="lg:border__top flex flex-row items-center justify-center gap-2 pb-[19px] pt-[28px] sm:gap-5 lg:gap-[50px] lg:pb-[28px] lg:pt-[20px] xl:order-1 xl:mt-[-4px] xl:justify-end xl:gap-[24px] xl:border-t-0 xl:pb-[40px] xl:pl-0 xl:pr-0 xl:pt-0"> */}
             {/* <!-- instagram --> */}
-            <li>
+            {/* <li>
               <a
                 href="#"
                 target="_blank"
@@ -328,10 +329,10 @@ export default component$(() => {
 
                 </span>
               </a>
-            </li>
+            </li> */}
             {/* <!-- facebook --> */}
 
-            <li>
+            {/* <li>
               <a
                 href="#"
                 target="_blank"
@@ -345,30 +346,15 @@ export default component$(() => {
 
                 </span>
               </a>
-            </li>
-            {/* <!-- linkedin --> */}
-
-
-            <IconLinkedin/>
+            </li> */}
+            {/* <!-- linkedin --> */}           
             
-            {/* <!-- upwork --> */}
+            {/* <!-- upwork --> */}            
 
-            
-
-            {/* <!-- youtube --> */}
-
-            <svg
-
-                    class="h-[20px] w-[27px] lg:h-[30px] lg:w-[30px] xl:h-[32px] xl:w-[32px] "
-                    fill="currentColor"
-
-                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
-        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
-    </svg>
+            {/* <!-- youtube --> */}           
            
             {/* <!-- twitter --> */}
-
-            <li>
+            {/* <li>
               <a
                 href="#"
                 target="_blank"
@@ -381,10 +367,32 @@ export default component$(() => {
                 </span>
               </a>
             </li>
+          </ul> */}
 
-
-          </ul>
+          {/* 02 */}
+          <ul class="lg:border__top flex flex-row items-center justify-center gap-2 pb-[19px] pt-[28px] sm:gap-5 lg:gap-[50px] lg:pb-[28px] lg:pt-[20px] xl:order-1 xl:mt-[-4px] xl:justify-end xl:gap-[24px] xl:border-t-0 xl:pb-[40px] xl:pl-0 xl:pr-0 xl:pt-0">
+             {social.map(({ label, href, icon: Icon, target, rel }, index) => (
+               <li key={index}>
+                 <a
+                   class="social__link"
+                   aria-label={label}
+                   title={label}
+                   href={href}
+                   target={target}
+                rel={rel}
+                 >
+                   <span class="icon">
+                     {Icon && <Icon />}
+                     </span>
+                 </a>
+               </li>
+             ))}
+           </ul>
+           
+        
         </div>
+
+
 
         <div class="flex flex-col items-center gap-[5px] pt-[22px] text-slate-900/50 dark:text-[#94a3b8]  lg:flex-row lg:justify-center lg:gap-[31px] lg:pt-0 xl:gap-[40px]">
           <a
