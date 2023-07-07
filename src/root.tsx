@@ -64,9 +64,9 @@ export default component$(() => {
         />
 
          {/* TODO added carousel tailwind 27.06.2023 */}
-       <link
+       {/* <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" /> */}
 
        
 
