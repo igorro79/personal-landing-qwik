@@ -6,17 +6,22 @@
  *
  */
 /*================== swiper style ================= */
+/* .swiper-slide {
+  @apply  max-w-[33%];
+} */
+/* TODO changes style 07.07.2023 */
 .swiper-slide {
-  @apply max-w-[33%];
+  @apply w-full  ;
 }
+/* text-blue-600 */
 .swiper-custom-button {
-  @apply absolute z-10 top-[calc(50%-40px)] w-10 h-10 text-blue-600 rounded-full bg-white hover:bg-slate-300 flex justify-center items-center text-2xl cursor-pointer;
+  @apply absolute z-10 top-[calc(50%-40px)] w-10 h-10 text-white/50 lg:text-blue-600 rounded-full lg:bg-white/50 hover:bg-slate-300 flex justify-center items-center text-2xl cursor-pointer;
 }
 .swiper-custom-button--prev {
-  @apply left-10;
+  @apply left-2 lg:left-10;
 }
 .swiper-custom-button--next {
-  @apply right-10;
+  @apply right-2 lg:right-10;
 }
 .swiper-slide img {
   @apply rounded-xl;
@@ -25,6 +30,11 @@
   width: 16px;
   height: 16px;
 }
+
+/* 07.07.2023 */
+/* .image-slider {
+  width: 500px;
+} */
 /*================== end swiper style ================= */
 @tailwind base;
 
