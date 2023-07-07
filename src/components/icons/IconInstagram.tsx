@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export const IconInstagram = component$(() => {
   return (
+    // TODO added icons with figma
     <svg
        class="h-[29px] w-[29px] lg:h-[30px] lg:w-[30px] xl:h-[34px] xl:w-[34px] "
        fill="currentColor"
