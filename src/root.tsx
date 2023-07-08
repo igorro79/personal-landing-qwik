@@ -1,5 +1,11 @@
 // import { component$, createContextId, useContextProvider, useStore, useStyles$, useTask$ } from "@builder.io/qwik";
-import { component$, createContextId, useContextProvider, useStore, useStyles$, } from "@builder.io/qwik";
+import {
+  component$,
+  createContextId,
+  useContextProvider,
+  useStore,
+  useStyles$,
+} from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -10,13 +16,12 @@ import { RouterHead } from "~/components/core/RouterHead";
 import { DarkThemeLauncher } from "~/components/core/DarkThemeLauncher";
 
 import globalStyles from "~/assets/styles/global.css?inline";
-
+import { GoogleAnalytics } from "./components/core/GoogleAnalytics";
 
 export interface GenericType {
   modal: boolean;
   profile: boolean;
   form: boolean;
- 
 }
 
 export const GlobalContext = createContextId<GenericType>(
@@ -24,17 +29,16 @@ export const GlobalContext = createContextId<GenericType>(
 );
 
 export default component$(() => {
-
-   const globalState = useStore<GenericType>({
+  const globalState = useStore<GenericType>({
     // cart: cartInitialValue,
     // cart: [],
     // cartIsOpen: false,
     modal: false,
-     profile: false,
+    profile: false,
     form: false,
   });
 
-    useContextProvider(GlobalContext, globalState);
+  useContextProvider(GlobalContext, globalState);
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,
    * immediately followed by the document's <head> and <body>.
@@ -49,7 +53,7 @@ export default component$(() => {
   //   if (globalState.form === true && globalState.modal === true) {
   //     globalState.modal = false;
   //   }
-    
+
   // });
 
   return (
@@ -63,12 +67,10 @@ export default component$(() => {
           rel="stylesheet"
         />
 
-         {/* TODO added carousel tailwind 27.06.2023 */}
-       {/* <link
+        {/* TODO added carousel tailwind 27.06.2023 */}
+        {/* <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" /> */}
-
-       
 
         {/* awesom */}
         {/* <link
@@ -80,6 +82,7 @@ export default component$(() => {
         /> */}
         <RouterHead />
         <DarkThemeLauncher />
+        <GoogleAnalytics />
       </head>
       <body class="text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-gray-900 antialiased">
         <RouterOutlet />
@@ -87,11 +90,22 @@ export default component$(() => {
 
         {/* TODO added carousel tailwind 27.06.2023 */}
         {/* <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> */}
-         {/* <!-- from cdn !!!!!!!!!!!--> */}
-<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+        {/* <!-- from cdn !!!!!!!!!!!--> */}
+        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 
         {/* <!-- from cdn --> */}
-{/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script> */}
+        {/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script> */}
+
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WBT97DX"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
       </body>
     </QwikCityProvider>
   );

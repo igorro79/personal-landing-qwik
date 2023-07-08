@@ -1,4 +1,11 @@
-import { component$, Slot, useSignal, useVisibleTask$, $, useContext } from "@builder.io/qwik";
+import {
+  component$,
+  Slot,
+  useSignal,
+  useVisibleTask$,
+  $,
+  useContext,
+} from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 
 import { type InitialValues } from "@modular-forms/qwik";
@@ -13,8 +20,6 @@ import { useWindowScroll } from "~/hooks/useWindowScroll";
 
 import { GlobalContext } from "~/root";
 
-
-
 export type ContactForm = {
   categories: string[];
   username: string;
@@ -25,7 +30,9 @@ export type ContactForm = {
   about: string;
   file: any | undefined;
 };
-
+export const useGaLoader = routeLoader$(async (requestEvent) => {
+  console.log(requestEvent.env.get("GA_MEASUREMENT_ID"));
+});
 export const useContactFormLoader = routeLoader$<InitialValues<ContactForm>>(
   () => ({
     categories: [],
@@ -39,18 +46,12 @@ export const useContactFormLoader = routeLoader$<InitialValues<ContactForm>>(
   })
 );
 
-
-
-  
-
-
 export default component$(() => {
-
   const show = useSignal(true);
   const position = useSignal(0);
   const pos = useWindowScroll();
   // const globalState = useContext(IsOpenedContext);
-
+  // const ga = useGaLoader();
   //tracking page scroll to hide/show header
   useVisibleTask$(({ track }) => {
     track(pos);
@@ -72,13 +73,13 @@ export default component$(() => {
   });
 
   const context = useContext(GlobalContext);
-  
-   const closeModal = $(() => {
+
+  const closeModal = $(() => {
     context.modal = false;
     context.profile = false;
     // context.cartIsOpen = false;
   });
-  
+
   return (
     <div>
       <Header
@@ -96,7 +97,6 @@ export default component$(() => {
         {/* <Cart closeModal={closeModal} /> */}
       </Modal>
 
-      
       {/* <DynamicFormContainer>
         
         <ContactForm variant="dynamic" />
