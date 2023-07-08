@@ -40,4 +40,7 @@ lerna-debug.log*
 package-lock.json
 .jampack
 
-tmp
+tmp/
+
+.env
+.env.local
