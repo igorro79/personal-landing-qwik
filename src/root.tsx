@@ -97,14 +97,12 @@ export default component$(() => {
         {/* <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script> */}
 
         {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WBT97DX"
-            height="0"
-            width="0"
-            style="display:none;visibility:hidden"
-          ></iframe>
-        </noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-WBT97DX"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe>
         {/* <!-- End Google Tag Manager (noscript) --> */}
       </body>
     </QwikCityProvider>
