@@ -1,12 +1,9 @@
 export const SITE = {
-  name: "Qwind",
+  name: "Grininov Igor Personal Landing Page",
+  title: "Grininov Igor | Front-End Developer",
+  description: "Personal landing page made using Qwik and Tailwind CSS.",
 
-  title:
-    "Qwind — Free template for Qwik + Tailwind CSS to build your new website.",
-  description:
-    "Qwind is a free and ready to start template to make your website using Qwik and Tailwind CSS.",
-
-  origin: "https://qwind.pages.dev",
+  origin: "https://#",
   basePathname: "/",
   trailingSlash: true,
 };

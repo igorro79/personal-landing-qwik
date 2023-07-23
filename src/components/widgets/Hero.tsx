@@ -27,23 +27,21 @@ export default component$(() => {
       <div class="max-w-7xl mx-auto px-4 sm:px-6  ">
         {/* py-12 md:py-12 lg:py-16 block md:flex text-center md:text-left */}
         {/* lg:grid-flow-col-dense */}
-        <div class="sm:grid sm:grid-cols-[45%_55%] sm:grid-flow-row-dense sm:gap-8 xl:grid-cols-[75%_25%] xl:gap-0">
+        <div class="sm:grid sm:grid-cols-2 sm:grid-flow-row-dense sm:gap-8 xl:grid-cols-2 xl:gap-0">
           {/* pb-12 md:pb-0 md:py-0 mx-auto md:pr-16 flex items-center basis-3/5 */}
-           <div class=" mb-4 xl:pt-12 ">
-              {/* <div class="w-max"> */}
-              {/* whitespace-nowrap  tracking-[1.5]  leading-normal*/}
-              {/* animate-typing */}
-              <h1
-                class="animate-typing  overflow-hidden   border-r-4 border-r-white pr-5 xl:whitespace-nowrap
+          <div class=" mb-4 xl:pt-12 ">
+            {/* <div class="w-max"> */}
+            {/* whitespace-nowrap  tracking-[1.5]  leading-normal*/}
+            {/* animate-typing */}
+            <h1
+              class="animate-typing  overflow-hidden   border-r-4 border-r-white pr-5 xl:whitespace-nowrap
                 text-clampTitle   text-transparent bg-clip-text font-extrabold 
               bg-gradient-to-r from-[#00242a] via-[#9c30fff0] to-[#ffffff]  drop-shadow lg:drop-shadow-[17px_20px_5px_rgba(0,0,0,0.5)]"
-              >
-                Robotics Artificial intelligence
-              </h1>
-              {/* </div> */}
+            >
+              Robotics Artificial intelligence
+            </h1>
+            {/* </div> */}
           </div>
-          
-          
 
           {/* lg:col-start-1 lg:row-span-1 */}
           <div class="mb-8 sm:col-start-1 xl:max-w-[600px]">
@@ -56,7 +54,6 @@ export default component$(() => {
             {/* text-6xl lg:text-6xl*/}
 
             {/* flex items-center justify-start */}
-           
 
             <p class="text-white mt-8 text-clampParagraph ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -87,38 +84,35 @@ export default component$(() => {
           <div class="mb-4 sm:row-span-2 sm:col-start-2 lg:mb-8">
             {/* max-w-4xl */}
             <div class="relative  m-auto ">
+              <picture>
+                <source
+                  media="(max-width:819px)"
+                  type="image/png"
+                  srcSet={coverImageMobile}
+                />
+                <source
+                  media="(min-width:820px) and (max-width:1279px)"
+                  type="image/png"
+                  srcSet={coverImage}
+                />
 
-              
-                      <picture>
-                        <source
-                          media="(max-width:819px)"
-                          type="image/png"
-                          srcSet={coverImageMobile}
-                        />
-                        <source
-                          media="(min-width:820px) and (max-width:1279px)"
-                          type="image/png"
-                          srcSet={coverImage}
-                        />
+                <source
+                  media="(min-width:1280px)"
+                  type="image/png"
+                  srcSet={coverImage}
+                />
 
-                        <source
-                          media="(min-width:1280px)"
-                          type="image/png"
-                          srcSet={coverImage}
-                        />
-
-                        <img
+                <img
                   class="h-auto w-full border-dark xl:max-w-[300px] "
                   width={500}
-                height={697}
-                          srcSet={coverImageMobile}
-                          src={coverImageMobile}
-                          alt="Man"
-                          loading="lazy"
-                        />
-                      </picture>
+                  height={697}
+                  srcSet={coverImageMobile}
+                  src={coverImageMobile}
+                  alt="Man"
+                  loading="lazy"
+                />
+              </picture>
 
-                     
               {/* <Image
                 src={coverImage}
                 // src="/images/robotics.png"
@@ -132,22 +126,20 @@ export default component$(() => {
                 breakpoints={[320, 480, 640, 1024]}
               /> */}
             </div>
-            </div>
-            
-           
+          </div>
         </div>
 
         <div class="grid grid-cols-3 gap-2 grid-flow-row-dense opacity-90">
-          <div class="bg-red-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-orange-500 rounded-lg shadow-xl min-h-[14px] col-span-3"/>
-          <div class="bg-yellow-500 rounded-lg shadow-xl min-h-[14px] row-span-2 col-span-2"/>
-          <div class="bg-green-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-teal-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-blue-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-indigo-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-purple-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-pink-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-slate-500 rounded-lg shadow-xl min-h-[14px]"/>
+          <div class="bg-red-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-orange-500 rounded-lg shadow-xl min-h-[14px] col-span-3" />
+          <div class="bg-yellow-500 rounded-lg shadow-xl min-h-[14px] row-span-2 col-span-2" />
+          <div class="bg-green-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-teal-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-blue-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-indigo-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-purple-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-pink-500 rounded-lg shadow-xl min-h-[14px]" />
+          <div class="bg-slate-500 rounded-lg shadow-xl min-h-[14px]" />
         </div>
       </div>
     </section>

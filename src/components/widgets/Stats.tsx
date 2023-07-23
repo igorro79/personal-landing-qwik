@@ -5,57 +5,93 @@ export default component$(() => {
     <>
       <div class="bg-gradient-to-r from-[#0d9fe1] to-[#202157] text-white/50  dark:bg-none py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 class="text-center text-[32px]  font-semibold leading-8 ">
+          <h2 class="text-center text-[32px]  font-semibold leading-8 mb-28">
             Trusted by the world’s most innovative teams
           </h2>
 
-
-          <div class=" ticker-wrapper  overflow-hidden h-28 relative
-          mx-auto mt-32 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <div class="ticker-wrapper__first-half  ">
-
-         
-                 <img
-              class="animate-pulse col-span-2 h-28  w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-              alt="Transistor"
-              width="158"
-              height="58"
-            />
-                
-         
-           {/* max-h-12 */}
-            <img
-              class="col-span-2 h-28  w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-              alt="Reform"
-              width="158"
-              height="48"
-            />
-            <img
-              class="animate-pulse  col-span-2 h-28 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-              alt="Tuple"
-              width="158"
-              height="48"
-            />
-            <img
-              class="col-span-2 h-28 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-              alt="SavvyCal"
-              width="158"
-              height="48"
-            />
-            <img
-              class="animate-pulse col-span-2 col-start-2 h-28 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-              alt="Statamic"
-              width="158"
-              height="48"
+          <div
+            class=" ticker-wrapper  overflow-hidden h-28 relative 
+        
+          "
+          >
+            <div class="marquee">
+              <img
+                class="animate-pulse col-span-2 h-28  w-full object-contain lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
+                alt="Transistor"
+                width="158"
+                height="58"
               />
 
-              
-              </div>
+              {/* max-h-12 */}
+              <img
+                class="col-span-2 h-28  w-full object-contain lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
+                alt="Reform"
+                width="158"
+                height="48"
+              />
+              <img
+                class="animate-pulse  col-span-2 h-28 w-full object-contain lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
+                alt="Tuple"
+                width="158"
+                height="48"
+              />
+              <img
+                class="col-span-2 h-28 w-full object-contain sm:col-start-2 lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
+                alt="SavvyCal"
+                width="158"
+                height="48"
+              />
+              <img
+                class="animate-pulse col-span-2 col-start-2 h-28 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
+                alt="Statamic"
+                width="158"
+                height="48"
+              />
+            </div>
+            <div class="marquee2 absolute top-0 ">
+              <img
+                class="animate-pulse col-span-2 h-28  w-full object-contain lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
+                alt="Transistor"
+                width="158"
+                height="58"
+              />
+
+              {/* max-h-12 */}
+              <img
+                class="col-span-2 h-28  w-full object-contain lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
+                alt="Reform"
+                width="158"
+                height="48"
+              />
+              <img
+                class="animate-pulse  col-span-2 h-28 w-full object-contain lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
+                alt="Tuple"
+                width="158"
+                height="48"
+              />
+              <img
+                class="col-span-2 h-28 w-full object-contain sm:col-start-2 lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
+                alt="SavvyCal"
+                width="158"
+                height="48"
+              />
+              <img
+                class="animate-pulse col-span-2 col-start-2 h-28 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
+                alt="Statamic"
+                width="158"
+                height="48"
+              />
+            </div>
           </div>
         </div>
 
@@ -110,8 +146,6 @@ export default component$(() => {
         </div>
       </div>
       </div> */}
-
-     
     </>
   );
 });

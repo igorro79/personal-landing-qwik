@@ -163,21 +163,48 @@
 
 /* $duration: 30s; */
 
-.ticker-wrapper__first-half {
+.marquee,
+.marquee2 {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation: ticker 30s infinite linear forwards;
 }
 
-/* .ticker-wrapper__second-half {
-    animation: 30s ticker 30s/2 infinite linear forwards;
+/* .marquee-wrapper__second-half {
+    animation: 30s marquee 30s/2 infinite linear forwards;
   } */
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.marquee {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.marquee2 {
+  animation: marquee2 10s linear infinite;
+}
+
+/* 
 @keyframes ticker {
   0% {
     transform: translate(100%, 0);
@@ -190,7 +217,7 @@
   100% {
     transform: translate(-100%, 0);
   }
-}
+} */
 
 /* bg-image */
 /* .hero {  

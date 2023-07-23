@@ -19,11 +19,8 @@ export default component$(() => {
       <Hero />
       <HeroTwo />
       <PageCarousel />
-      {/* <Features /> */}
       <FAQs />
-
       <Stats />
-      {/* <CallToAction /> */}
       <MainFormSection />
     </>
   );
@@ -33,7 +30,7 @@ export const head: DocumentHead = {
   title: SITE.title,
   meta: [
     {
-      name: "description",
+      name: "Homepage",
       content: SITE.description,
     },
   ],
