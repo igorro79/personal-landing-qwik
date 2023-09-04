@@ -52,11 +52,11 @@ export const TextInput = component$(
       <div class="relative mb-4">
         <input
           {...props}
-          class={`peer m-0 block  w-full rounded-full border-[1px] border-middleGrey bg-transparent  bg-clip-padding px-[30px] py-5 text-sm font-medium leading-[1.3] tracking-[1px] text-middleGrey transition ease-in-out hover:border-white focus:border-white  focus:shadow-none focus:outline-none focus:outline-0
+          class={`peer m-0 block focus:border-light hover:border-light text-accentDark2 w-full outline-none rounded-full border-[1px] dark:hover:border-light dark:focus:border-light  dark:border-middleGrey bg-transparent  bg-clip-padding px-[30px] py-5 text-sm font-medium leading-[1.3] tracking-[1px] dark:text-middleGrey transition ease-in-out 
            ${
              error
                ? "border-red-600/50 dark:border-red-400/50"
-               : "border-slate-200 hover:border-slate-300 focus:border-sky-600/50 dark:border-slate-800 dark:hover:border-slate-700 dark:focus:border-sky-400/50"
+               : "   dark:border-light border-accentDark2 "
            }
           `}
           id={name}

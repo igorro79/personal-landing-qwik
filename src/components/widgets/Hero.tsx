@@ -1,155 +1,82 @@
-import { component$, useContext, $ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { Container } from "../core/Container";
+import { ActionButton } from "../button/ActionButton";
 // import { Image } from "@unpic/qwik";
-import { GlobalContext } from "~/root";
+
 // import coverImage from "~/assets/images/robotics.png";
-import coverImageMobile from "~/assets/images/robotics-320.png";
-import coverImage from "~/assets/images/robotics.png";
-
-// const coverImage = "https://images.unsplash.com/photo-1590767950092-42b8362368da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80";
-// const coverImage = "https://p7.hiclipart.com/preview/122/843/764/robotics-industry-smart-robots-artificial-intelligence-robot-thumbnail.jpg";
-
-// const coverImage = "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43be0f.png";
-// const coverImage = "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43be0f.png";
+// import coverImageMobile from "~/assets/images/robotics-320.png";
+// import coverImage from "~/assets/images/robotics.png";
 
 export default component$(() => {
-  const context = useContext(GlobalContext);
-  const openProfile = $(() => {
-    context.modal = true;
-    context.profile = true;
+  const blobs = useSignal<Element | undefined>();
+  useVisibleTask$(() => {
+    blobs.value?.classList.add("opacity-100");
   });
 
   return (
-    // bg-gradient-to-r from-sky-500 to-indigo-500  mt-[-90px] md:h-screen 2xl:h-auto
-    <section
-      class={`pt-[92px] pb-[50px] bg-gradient-to-br from-[#0d9fe1] to-[#202157] dark:bg-none  2xl:pt-[160px] xl:h-screen  `}
-    >
-      {/* md:flex */}
-      <div class="max-w-7xl mx-auto px-4 sm:px-6  ">
-        {/* py-12 md:py-12 lg:py-16 block md:flex text-center md:text-left */}
-        {/* lg:grid-flow-col-dense */}
-        <div class="sm:grid sm:grid-cols-[45%_55%] sm:grid-flow-row-dense sm:gap-8 xl:grid-cols-[75%_25%] xl:gap-0">
-          {/* pb-12 md:pb-0 md:py-0 mx-auto md:pr-16 flex items-center basis-3/5 */}
-           <div class=" mb-4 xl:pt-12 ">
-              {/* <div class="w-max"> */}
-              {/* whitespace-nowrap  tracking-[1.5]  leading-normal*/}
-              {/* animate-typing */}
-              <h1
-                class="animate-typing  overflow-hidden   border-r-4 border-r-white pr-5 xl:whitespace-nowrap
-                text-clampTitle   text-transparent bg-clip-text font-extrabold 
-              bg-gradient-to-r from-[#00242a] via-[#9c30fff0] to-[#ffffff]  drop-shadow lg:drop-shadow-[17px_20px_5px_rgba(0,0,0,0.5)]"
-              >
-                Robotics Artificial intelligence
-              </h1>
-              {/* </div> */}
-          </div>
-          
-          
+    <section class={`pt-20 relative min-h-screen `}>
+      <Container>
+        <div
+          ref={blobs}
+          class="absolute max-w-[900px] opacity-0 transition-opacity duration-1000 -z-1 left-[40%] -top-1/3 w-[120%]"
+        >
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 500"
+            width="100%"
+            id="blobSvg"
+            style="opacity: 1;"
+            filter="blur(1.4px)"
+            transform="rotate(0)"
+          >
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: rgb(211, 224, 116);"
+                ></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color: rgb(206, 115, 155);"
+                ></stop>
+              </linearGradient>
+            </defs>
 
-          {/* lg:col-start-1 lg:row-span-1 */}
-          <div class="mb-8 sm:col-start-1 xl:max-w-[600px]">
-            {/* <div class=""> */}
-            {/* <h1 class="text-5xl md:text-[3.48rem] font-bold leading-tighter tracking-tighter mb-4 font-heading px-4 md:px-0">
-                Robotics Artificial intelligence                 
-              </h1> */}
-            {/*  bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 */}
-
-            {/* text-6xl lg:text-6xl*/}
-
-            {/* flex items-center justify-start */}
-           
-
-            <p class="text-white mt-8 text-clampParagraph ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptates vero nostrum veritatis alias quibusdam repellendus
-              tempore doloremque cumque sapiente eum laudantium modi quaerat
-              omnis, quidem explicabo suscipit provident voluptatibus unde?
-            </p>
-
-            {/* <button type="button" onClick$={openProfile}>
-            <IconUser />
-          </button> */}
-
-            <button
-              type="button"
-              onClick$={openProfile}
-              class=" mt-12 rounded-full w-full lg:w-80  px-3.5 py-4 text-sm font-semibold text-white text-center shadow-sm  
-                bg-gradient-to-r from-[#9f17ff] to-[#4d1bff]
-               transition ease-in duration-150  hover:from-[#00ff8e] hover:to-[#47b595]
-                 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </button>
-            {/* </div> */}
-          </div>
-
-          {/* flex-1 block md:flex items-center*/}
-          {/* lg:col-start-2 lg:row-start-1 */}
-          <div class="mb-4 sm:row-span-2 sm:col-start-2 lg:mb-8">
-            {/* max-w-4xl */}
-            <div class="relative  m-auto ">
-
-              
-                      <picture>
-                        <source
-                          media="(max-width:819px)"
-                          type="image/png"
-                          srcSet={coverImageMobile}
-                        />
-                        <source
-                          media="(min-width:820px) and (max-width:1279px)"
-                          type="image/png"
-                          srcSet={coverImage}
-                        />
-
-                        <source
-                          media="(min-width:1280px)"
-                          type="image/png"
-                          srcSet={coverImage}
-                        />
-
-                        <img
-                  class="h-auto w-full border-dark xl:max-w-[300px] "
-                  width={500}
-                height={697}
-                          srcSet={coverImageMobile}
-                          src={coverImageMobile}
-                          alt="Man"
-                          loading="lazy"
-                        />
-                      </picture>
-
-                     
-              {/* <Image
-                src={coverImage}
-                // src="/images/robotics.png"
-                layout="constrained"
-                width={493}
-                height={616}
-                alt="Hero Image "
-                placeholder="transparent"
-                // bg-gray-400 dark:bg-slate-700
-                class="mx-auto w-full rounded-md md:h-full drop-shadow-2xl "
-                breakpoints={[320, 480, 640, 1024]}
-              /> */}
-            </div>
-            </div>
-            
-           
+            <path id="blob" fill="url(#gradient)" style="opacity: 0.72;">
+              <animate
+                attributeName="d"
+                dur="10s"
+                repeatCount="indefinite"
+                values="M385.47259,309.13613Q368.27225,368.27225,309.13613,425.14983Q250,482.02741,183.02911,432.9846Q116.05821,383.94179,100.85787,316.97089Q85.65753,250,111.11302,193.28426Q136.56852,136.56852,193.28426,70.4846Q250,4.40068,303.89298,73.30736Q357.78596,142.21404,380.22944,196.10702Q402.67293,250,385.47259,309.13613Z;M449.05134,329.9003Q409.80059,409.80059,329.9003,451.15995Q250,492.5193,162.89881,458.36084Q75.79762,424.20238,65.04837,337.10119Q54.29911,250,85.74629,183.59673Q117.19347,117.19347,183.59673,88.1905Q250,59.18753,328.8549,75.73886Q407.7098,92.2902,448.00594,171.1451Q488.30208,250,449.05134,329.9003Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M418.08664,320.33435Q390.6687,390.6687,320.33435,427.91946Q250,465.17023,188.27506,419.31005Q126.55013,373.44987,106.38448,311.72494Q86.21883,250,84.09726,165.98785Q81.9757,81.9757,165.98785,53.98938Q250,26.00305,311.1687,76.83282Q372.3374,127.6626,408.92099,188.8313Q445.50458,250,418.08664,320.33435Z;M421.63508,307.39005Q364.7801,364.7801,307.39005,427.43403Q250,490.08796,191.6822,428.36178Q133.3644,366.6356,70.9089,308.3178Q8.4534,250,54.21728,174.99058Q99.98115,99.98115,174.99058,81.49686Q250,63.01257,330.66021,75.84607Q411.32042,88.67958,444.90524,169.33979Q478.49006,250,421.63508,307.39005Z;M385.47259,309.13613Q368.27225,368.27225,309.13613,425.14983Q250,482.02741,183.02911,432.9846Q116.05821,383.94179,100.85787,316.97089Q85.65753,250,111.11302,193.28426Q136.56852,136.56852,193.28426,70.4846Q250,4.40068,303.89298,73.30736Q357.78596,142.21404,380.22944,196.10702Q402.67293,250,385.47259,309.13613Z"
+              ></animate>
+            </path>
+            <path id="blob" fill="url(#gradient)" style="opacity: 0.82;">
+              <animate
+                attributeName="d"
+                dur="10s"
+                repeatCount="indefinite"
+                values="M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z;M385.47259,309.13613Q368.27225,368.27225,309.13613,425.14983Q250,482.02741,183.02911,432.9846Q116.05821,383.94179,100.85787,316.97089Q85.65753,250,111.11302,193.28426Q136.56852,136.56852,193.28426,70.4846Q250,4.40068,303.89298,73.30736Q357.78596,142.21404,380.22944,196.10702Q402.67293,250,385.47259,309.13613Z;M395.5,320Q390,390,320,400Q250,410,172,408Q94,406,59,328Q24,250,70.5,183.5Q117,117,183.5,108Q250,99,335,89.5Q420,80,410.5,165Q401,250,395.5,320Z;M449.66467,329.57458Q409.14917,409.14917,329.57458,407.97733Q250,406.80549,191.3735,387.02924Q132.74701,367.25299,77.06026,308.6265Q21.3735,250,49.05191,163.36516Q76.73032,76.73032,163.36516,85.537Q250,94.34367,322.00775,100.16408Q394.01551,105.98449,442.09784,177.99225Q490.18018,250,449.66467,329.57458Z;M449.05134,329.9003Q409.80059,409.80059,329.9003,451.15995Q250,492.5193,162.89881,458.36084Q75.79762,424.20238,65.04837,337.10119Q54.29911,250,85.74629,183.59673Q117.19347,117.19347,183.59673,88.1905Q250,59.18753,328.8549,75.73886Q407.7098,92.2902,448.00594,171.1451Q488.30208,250,449.05134,329.9003Z;M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z"
+              ></animate>
+            </path>
+          </svg>
         </div>
+        <div class="relative z-1">
+          <div class="flex max-w-[400px] md:max-w-[50%] flex-col h-[calc(100vh-80px)] justify-center items-center">
+            <h1 class="mb-10 font-medium text-[clamp(20px,3vw,40px)]">
+              Hello! My name is Igor, <br />
+              I`m a Front-end developer.
+            </h1>
 
-        <div class="grid grid-cols-3 gap-2 grid-flow-row-dense opacity-90">
-          <div class="bg-red-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-orange-500 rounded-lg shadow-xl min-h-[14px] col-span-3"/>
-          <div class="bg-yellow-500 rounded-lg shadow-xl min-h-[14px] row-span-2 col-span-2"/>
-          <div class="bg-green-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-teal-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-blue-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-indigo-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-purple-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-pink-500 rounded-lg shadow-xl min-h-[14px]"/>
-          <div class="bg-slate-500 rounded-lg shadow-xl min-h-[14px]"/>
+            <ActionButton
+              variant="primary"
+              type="link"
+              href="#contact"
+              label="Contact me"
+            />
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 });

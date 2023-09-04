@@ -1,15 +1,9 @@
 # Menu
 
-## [CASES](#)
+## [HOME](/)
 
-## SERVICES
+## [ABOUT US](#about)
 
-- [ALL SERVICES](#)
-- [MOBILE PROMOTION](#)
-- [DIGITAL MARKETING](#)
-
-## [ABOUT US](/#)
-
-## [BLOG](/blog)
+## [PROJECTS](#projects)
 
 ## [CONTACT](#contact)

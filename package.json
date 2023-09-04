@@ -31,6 +31,7 @@
     "@unpic/qwik": "^0.0.19",
     "clsx": "^1.2.1",
     "gray-matter": "^4.0.3",
+    "gsap": "^3.12.2",
     "markdown-it": "^13.0.1",
     "node-fetch": "3.3.1",
     "swiper": "^10.0.3"
@@ -47,7 +48,8 @@
     "eslint": "8.41.0",
     "eslint-plugin-qwik": "1.1.4",
     "postcss": "^8.4.23",
-    "prettier": "2.8.8",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.5.4",
     "subfont": "^7.1.0",
     "tailwindcss": "^3.3.2",
     "typescript": "5.0.4",

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="path-0" style="fill: none;"
+            d="M 219.88347315697038 178.2166991496676 L 211.9766198581827 217.75096564361695" />
+        <path id="path-1" style="fill: none;"
+            d="M 231.82738866335757 184.31307268938602 L 238.3623281749631 143.93648213553752" />
+        <path id="text-path-0"
+            d="M 205.13999938964844 170.41323161125183 Q 205.79318225383759 168.4847869873047 206.44636511802673 170.41323161125183" />
+        <path id="text-path-1"
+            d="M 203.56898498535156 172.79177951812744 Q 206.60225105285645 163.73524475097656 209.63551712036133 172.79177951812744" />
+    </defs>
+    <text style="fill: rgb(51, 51, 51); font-family: Broadway; font-size: 8px; white-space: pre;"
+        transform="matrix(0.496403, 0.868094, -0.868094, 0.496403, 248.181824, -90.842682)">
+        <textPath xlink:href="#text-path-1">G</textPath>
+    </text>
+</svg>
